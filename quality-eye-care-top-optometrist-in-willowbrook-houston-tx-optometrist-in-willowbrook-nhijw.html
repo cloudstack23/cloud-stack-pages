@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Eye Care | Top Optometrist in Willowbrook, Houston, TX</title>
+    <meta name="description" content="Looking for a trusted optometrist in Willowbrook? Quality Eye Care offers comprehensive eye exams, contact lenses, and pediatric eye care in Houston, TX.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Quality Eye Care | Top Optometrist in Willowbrook">
+    <meta property="og:description" content="Quality Eye Care offers comprehensive eye exams, contact lenses, and treatment in Houston, TX.">
+    <meta property="og:url" content="https://www.eyecaresuperior.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Quality Eye Care | Top Optometrist in Willowbrook">
+    <meta name="twitter:description" content="Quality Eye Care offers comprehensive eye exams, contact lenses, and treatment in Houston, TX.">
+
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Optician",
+      "name": "Quality Eye Care",
+      "url": "https://www.eyecaresuperior.com",
+      "telephone": "(281) 477-7811",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "7540 Cypress Creek Pkwy",
+        "addressLocality": "Houston",
+        "addressRegion": "TX",
+        "postalCode": "77070",
+        "addressCountry": "US"
+      },
+      "description": "Quality Eye Care is a leading optometry practice in the Willowbrook area of Houston, TX offering comprehensive eye exams, contact lens fittings, and pediatric eye care."
+    }
+    </script>
+
+    <style>
+        /<em> CSS Variables </em>/
+        :root {
+            --primary: #0d9488; /<em> Teal accent color for healthcare </em>/
+            --primary-dark: #0f766e;
+            --primary-light: #ccfbf1;
+            --text-heading: #111827;
+            --text-body: #374151;
+            --text-muted: #6b7280;
+            --bg-white: #ffffff;
+            --bg-light: #f9fafb;
+            --bg-alt: #f3f4f6;
+            --bg-dark: #1e293b;
+            --bg-darker: #0f172a;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+            --transition: all 0.3s ease;
+            --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        /<em> Reset & Base </em>/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--text-body);
+            line-height: 1.7;
+            background-color: var(--bg-white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--text-heading);
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: 0.025em;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section-alt {
+            background-color: var(--bg-light);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /<em> Buttons </em>/
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white !important;
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+        }
+
+        /<em> Navigation </em>/
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: var(--shadow-sm);
+            padding: 1rem 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.025em;
+        }
+
+        .logo span {
+            color: var(--text-heading);
+        }
+
+        .nav-links {
+            display: none;
+        }
+
+        .nav-links a {
+            color: var(--text-heading);
+            margin-left: 2rem;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .mobile-menu-btn {
+            display: block;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-heading);
+            cursor: pointer;
+        }
+
+        /<em> Hero Section </em>/
+        .hero {
+            position: relative;
+            padding: 5rem 0 6rem;
+            background: linear-gradient(to bottom, var(--bg-white), var(--bg-light));
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            right: -5%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, var(--primary-light) 0%, rgba(255,255,255,0) 70%);
+            border-radius: 50%;
+            z-index: 0;
+            opacity: 0.6;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 a {
+            color: var(--primary);
+            text-decoration: underline;
+            text-decoration-color: var(--primary-light);
+            text-underline-offset: 4px;
+        }
+
+        .hero h1 a:hover {
+            color: var(--primary-dark);
+            text-decoration-color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--text-body);
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 400;
+        }
+
+        /<em> Services Section </em>/
+        .section-header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--bg-white);
+            padding: 2.5rem 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-light);
+        }
+
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 1.5rem;
+            color: var(--primary);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        /<em> FAQ Section </em>/
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background: var(--bg-white);
+            border-radius: var(--radius-md);
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            border: 1px solid var(--bg-alt);
+        }
+
+        summary {
+            padding: 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-heading);
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            color: var(--primary);
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+
+        details[open] summary::after {
+            content: '-';
+            transform: rotate(180deg);
+        }
+
+        .faq-content {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--text-body);
+            border-top: 1px solid var(--bg-alt);
+            margin-top: 0.5rem;
+            padding-top: 1rem;
+        }
+
+        /<em> Contact Section </em>/
+        .contact-section {
+            background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-light) 100%);
+            border-top: 4px solid var(--primary);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .contact-info-box {
+            background: var(--bg-white);
+            padding: 3rem 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+        }
+
+        .contact-item {
+            margin-bottom: 2rem;
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 1rem;
+            color: var(--primary);
+            background: var(--primary-light);
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        .contact-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /<em> Footer </em>/
+        .footer {
+            background: linear-gradient(to bottom, var(--bg-dark), var(--bg-darker));
+            color: #e5e7eb;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer h3 {
+            color: var(--bg-white);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer h4 {
+            color: var(--bg-white);
+            font-size: 1.2rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .footer p {
+            margin-bottom: 1rem;
+            color: #9ca3af;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: #9ca3af;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        /<em> Media Queries </em>/
+        @media (min-width: 640px) {
+            .section {
+                padding: 5rem 0;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .hero h1 {
+                font-size: 2.75rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .contact-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .navbar {
+                padding: 1.5rem 0;
+            }
+            
+            .nav-links {
+                display: flex;
+                align-items: center;
+            }
+            
+            .mobile-menu-btn {
+                display: none;
+            }
+            
+            .hero {
+                padding: 6rem 0 8rem;
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .section {
+                padding: 6rem 0;
+            }
+        }
+
+        /<em> Utility </em>/
+        .seo-link {
+            color: inherit;
+            text-decoration: underline;
+            text-decoration-color: var(--primary);
+            font-weight: 500;
+        }
+        
+        .seo-link:hover {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="https://www.eyecaresuperior.com" class="logo">Quality <span>Eye Care</span></a>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+                <a href="https://www.eyecaresuperior.com" class="btn btn-primary" style="margin-left: 2rem; padding: 0.6rem 1.5rem;">Book Exam</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Trusted <a href="https://www.eyecaresuperior.com">Optometrist in Willowbrook</a></h1>
+                <p>Quality Eye Care is a leading optometry practice in the Willowbrook area of Houston, TX. We offer comprehensive eye exams, contact lens fittings, and treatment of eye diseases for patients of all ages.</p>
+                <a href="https://www.eyecaresuperior.com" class="btn btn-primary">Schedule Your Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comprehensive Vision Care</h2>
+                <p>As your dedicated <a href="https://www.eyecaresuperior.com" class="seo-link">optometrist in Willowbrook</a>, we provide a full spectrum of eye care services using state-of-the-art technology to ensure your optimal eye health.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                    <h3>Comprehensive Eye Exams</h3>
+                    <p>Thorough evaluations of your visual acuity and eye health. We check for refractive errors and screen for early signs of eye conditions to protect your vision long-term.</p>
+                    <a href="https://www.eyecaresuperior.com" style="font-weight: 600;">Learn More &rarr;</a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2a10 10 0 0 1 10 10"></path>
+                    </svg>
+                    <h3>Contact Lens Fittings</h3>
+                    <p>Expert fittings for all types of contact lenses, including daily disposables, astigmatism lenses, and multifocal options tailored to your specific lifestyle needs.</p>
+                    <a href="https://www.eyecaresuperior.com" style="font-weight: 600;">Learn More &rarr;</a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                    <h3>Medical Eye Care</h3>
+                    <p>Diagnosis, management, and treatment of eye diseases such as glaucoma, macular degeneration, diabetic retinopathy, dry eye syndrome, and eye infections.</p>
+                    <a href="https://www.eyecaresuperior.com" style="font-weight: 600;">Learn More &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our optometry services in Houston, TX.</p>
+            </div>
+            
+            <div class="faq-container">
+                <details>
+                    <summary>How often should I visit an optometrist in Willowbrook?</summary>
+                    <div class="faq-content">
+                        <p>We generally recommend that adults schedule a comprehensive eye exam with an <a href="https://www.eyecaresuperior.com" class="seo-link">optometrist in Willowbrook</a> every year. However, if you have existing eye conditions, diabetes, or wear contact lenses, you may need more frequent visits. Children should have their first eye exam at 6 months, again at age 3, and before starting school.</p>
+                    </div>
+                </details>
+                
+                <details>
+                    <summary>Do you offer pediatric eye care?</summary>
+                    <div class="faq-content">
+                        <p>Yes! Quality Eye Care provides comprehensive pediatric eye care. Our caring team is experienced in making children feel comfortable while we assess their visual development, check for refractive errors, and ensure their eyes are healthy for school and play.</p>
+                    </div>
+                </details>
+                
+                <details>
+                    <summary>What types of contact lenses do you provide?</summary>
+                    <div class="faq-content">
+                        <p>We offer a wide curated selection of contact lenses, including soft daily disposables, bi-weekly and monthly lenses, toric lenses for astigmatism, multifocal lenses, and rigid gas permeable (RGP) lenses. During your fitting, we will determine the best option for your visual needs and comfort.</p>
+                    </div>
+                </details>
+                
+                <details>
+                    <summary>Can you treat eye diseases like glaucoma or macular degeneration?</summary>
+                    <div class="faq-content">
+                        <p>Absolutely. Our practice is equipped with advanced diagnostic technology to detect, manage, and treat various eye diseases. We provide ongoing care for conditions like glaucoma, macular degeneration, diabetic eye disease, and dry eye syndrome to help preserve your vision.</p>
+                    </div>
+                </details>
+                
+                <details>
+                    <summary>How do I schedule an appointment with your Willowbrook optometry practice?</summary>
+                    <div class="faq-content">
+                        <p>Scheduling is easy! You can call our office directly at (281) 477-7811 during business hours, or you can visit <a href="https://www.eyecaresuperior.com" class="seo-link">our website</a> to request an appointment online. We look forward to welcoming you to Quality Eye Care.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/CTA Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div>
+                    <h2 style="font-size: 2.2rem; margin-bottom: 1.2rem;">Ready for Clearer Vision?</h2>
+                    <p style="font-size: 1.1rem; margin-bottom: 2rem; color: var(--text-body);">Don't compromise on your eye health. Trust the leading <a href="https://www.eyecaresuperior.com" class="seo-link">optometrist in Willowbrook</a> for comprehensive, compassionate care for your entire family.</p>
+                    <a href="https://www.eyecaresuperior.com" class="btn btn-primary" style="font-size: 1.1rem; padding: 1.2rem 2.5rem;">Book Your Eye Exam Today</a>
+                </div>
+                
+                <div class="contact-info-box">
+                    <div class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <h4>Call Us</h4>
+                        <p>(281) 477-7811</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <h4>Visit Our Clinic</h4>
+                        <p>7540 Cypress Creek Pkwy<br>Houston, TX, 77070<br>United States</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Quality Eye Care</h3>
+                    <p>Providing exceptional vision care, comprehensive eye exams, and premium eyewear to the Willowbrook community and surrounding Houston areas.</p>
+                </div>
+                
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.eyecaresuperior.com">Home</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#faq">Patient FAQ</a></li>
+                        <li><a href="https://www.eyecaresuperior.com">Schedule Appointment</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4>Contact Information</h4>
+                    <ul class="footer-links">
+                        <li><strong>Address:</strong> 7540 Cypress Creek Pkwy, Houston, TX 77070</li>
+                        <li><strong>Phone:</strong> (281) 477-7811</li>
+                        <li><strong>Website:</strong> <a href="https://www.eyecaresuperior.com">www.eyecaresuperior.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Quality Eye Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
