@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>505 Plumbing | Albuquerque Plumbing & HVAC Services</title>
+    <meta name="description" content="Top-rated Albuquerque Plumbing, Heating & Cooling Services. Fast, reliable, and affordable solutions from a licensed team. Call 505 Plumbing today!">
+    <meta name="keywords" content="Albuquerque Plumbing, Albuquerque HVAC, Plumber Albuquerque, Heating, Cooling, NM">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="505 Plumbing | Albuquerque Plumbing & HVAC Services">
+    <meta property="og:description" content="Top-rated Albuquerque Plumbing, Heating & Cooling Services. Fast, reliable, and affordable solutions from a licensed team.">
+    <meta property="og:url" content="https://505plumbing.com/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="505 Plumbing | Albuquerque Plumbing & HVAC Services">
+    <meta name="twitter:description" content="Top-rated Albuquerque Plumbing, Heating & Cooling Services. Fast, reliable, and affordable solutions from a licensed team.">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HVACBusiness",
+      "name": "505 Plumbing",
+      "url": "https://505plumbing.com/",
+      "telephone": "+15055603865",
+      "email": "info@505plumbing.com",
+      "description": "Plumbing, Heating & Cooling Services in Albuquerque, NM.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Albuquerque",
+        "addressRegion": "NM",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://maps.app.goo.gl/bVLYXJqVnuhru97z6",
+        "https://www.instagram.com/505plumbheatcool",
+        "https://www.facebook.com/505plumbingheatcool/"
+      ]
+    }
+    </script>
+
+    <style>
+        /<em> CSS Reset & Base Variables </em>/
+        :root {
+            --bg-white: #ffffff;
+            --bg-light: #f9fafb;
+            --bg-gray: #f3f4f6;
+            --text-dark: #1f2937;
+            --text-medium: #374151;
+            --heading-dark: #111827;
+            --accent-color: #0284c7; /<em> Professional Blue </em>/
+            --accent-hover: #0369a1;
+            --footer-bg: #1e293b;
+            --footer-text: #e5e7eb;
+            --border-color: #e5e7eb;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-medium);
+            background-color: var(--bg-white);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--heading-dark);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+
+        /<em> Layout Utility </em>/
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .bg-light {
+            background-color: var(--bg-light);
+        }
+
+        .bg-gray {
+            background-color: var(--bg-gray);
+        }
+
+        .text-center {
+            text-center;
+        }
+
+        /<em> Buttons </em>/
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--bg-white);
+            padding: 14px 28px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+            color: var(--bg-white);
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--accent-color);
+            border: 2px solid var(--accent-color);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-white);
+        }
+
+        /<em> Header & Navigation </em>/
+        header {
+            background-color: var(--bg-white);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--accent-color);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .logo:hover {
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .nav-cta {
+            display: none;
+        }
+
+        /<em> Hero Section </em>/
+        .hero {
+            background-color: var(--bg-white);
+            padding: 100px 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            max-width: 900px;
+            margin: 0 auto 24px;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 32px;
+            color: var(--text-medium);
+        }
+
+        /<em> Services Section </em>/
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background-color: var(--bg-white);
+            padding: 40px 30px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 20px;
+            color: var(--accent-color);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        /<em> About Section </em>/
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /<em> FAQ Section </em>/
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background-color: var(--bg-white);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        summary {
+            padding: 20px;
+            font-weight: 600;
+            color: var(--heading-dark);
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            line-height: 1;
+        }
+
+        details[open] summary::after {
+            content: '−';
+        }
+
+        details[open] summary {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .faq-answer {
+            padding: 20px;
+            color: var(--text-medium);
+            background-color: var(--bg-light);
+        }
+
+        /<em> Contact Section </em>/
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--bg-white);
+            padding: 50px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .contact-item {
+            margin-bottom: 20px;
+        }
+
+        .contact-item h4 {
+            margin-bottom: 5px;
+            color: var(--accent-color);
+        }
+
+        .contact-item p {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        /<em> Footer </em>/
+        footer {
+            background-color: var(--footer-bg);
+            color: var(--footer-text);
+            padding: 60px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            color: var(--bg-white);
+            margin-bottom: 20px;
+            font-size: 1.25rem;
+        }
+
+        .footer-col p, .footer-col a {
+            color: var(--footer-text);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .footer-col a:hover {
+            color: var(--bg-white);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .social-links a:hover {
+            color: var(--bg-white);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: #9ca3af;
+        }
+
+        /<em> Responsive Design </em>/
+        @media (min-width: 768px) {
+            .nav-cta {
+                display: inline-block;
+            }
+            .contact-grid {
+                grid-template-columns: repeat(3, 1fr);
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .nav-links {
+                display: none; /<em> Simple mobile approach for single file </em>/
+            }
+            .section {
+                padding: 50px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="https://505plumbing.com/" class="logo">505 Plumbing</a>
+            <nav class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#about">About Us</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="tel:+15055603865" class="btn nav-cta">(505) 560-3865</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Expert <a href="https://505plumbing.com/">Albuquerque Plumbing</a> & HVAC Services</h1>
+            <p>Whether you're dealing with a leaky faucet, a clogged drain, a broken A/C unit, or a failing furnace, our licensed team is ready to deliver fast, reliable solutions throughout Albuquerque, NM.</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="tel:+15055603865" class="btn">Call Now: (505) 560-3865</a>
+                <a href="#contact" class="btn btn-outline">Request Service</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <div class="about-content">
+                <h2>Your Trusted Home Service Professionals</h2>
+                <p>At 505 Plumbing, Heating & Cooling, we take pride in providing top-quality service for your home’s essential systems. Finding a dependable <a href="https://505plumbing.com/">Plumber Albuquerque</a> residents trust shouldn't be a hassle. We combine years of industry expertise with a commitment to customer satisfaction, ensuring that every repair, maintenance visit, or installation is done right the first time—all at an affordable price.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 style="text-align: center;">Our Services</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto;">Comprehensive plumbing, heating, and cooling solutions tailored to your home's unique needs.</p>
+            
+            <div class="services-grid">
+                <!-- Service Card 1: Plumbing -->
+                <div class="service-card">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                    </svg>
+                    <h3>Plumbing Services</h3>
+                    <p>From stubborn clogs and leaky faucets to complete pipe replacements, our licensed team is the premier <a href="https://505plumbing.com/">Plumber Albuquerque</a> relies on for fast, mess-free repairs.</p>
+                </div>
+
+                <!-- Service Card 2: Heating -->
+                <div class="service-card">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                    </svg>
+                    <h3>Heating & Furnaces</h3>
+                    <p>Stay warm during the cold New Mexico winters. We offer comprehensive furnace repair, maintenance, and installation services to keep your home comfortable and safe.</p>
+                </div>
+
+                <!-- Service Card 3: Cooling -->
+                <div class="service-card">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <h3>Air Conditioning</h3>
+                    <p>Beat the summer heat with our top-tier <a href="https://505plumbing.com/">Albuquerque HVAC</a> solutions. We repair, service, and install all major brands of air conditioning units efficiently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section bg-light">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px;">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>Do you offer emergency plumbing services in Albuquerque?</summary>
+                    <div class="faq-answer">
+                        <p>Yes, we understand that plumbing emergencies don't wait for business hours. If you have a burst pipe, severe leak, or overflowing drain, contact us immediately for prompt assistance.</p>
+                    </div>
+                </details>
+                
+                <details>
+                    <summary>How often should I have my HVAC system serviced?</summary>
+                    <div class="faq-answer">
+                        <p>We recommend servicing your HVAC system twice a year—once in the spring for your A/C unit and once in the fall for your furnace. Regular maintenance helps prevent unexpected breakdowns and extends the life of your equipment.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Are your plumbers and technicians licensed and insured?</summary>
+                    <div class="faq-answer">
+                        <p>Absolutely. Every member of the 505 Plumbing team is fully licensed, trained, and insured to perform plumbing, heating, and cooling work safely and up to New Mexico state codes.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>What areas do you serve?</summary>
+                    <div class="faq-answer">
+                        <p>We proudly serve the entire Albuquerque, NM area and surrounding communities. If you are unsure if you fall within our service radius, please give us a call!</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Do you provide estimates before starting work?</summary>
+                    <div class="faq-answer">
+                        <p>Yes, we believe in transparent pricing. Once we diagnose the issue, we will provide you with a clear, upfront estimate before any work begins so there are no surprises on your final bill.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px;">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h4>Call Us</h4>
+                    <p><a href="tel:+15055603865" style="color: var(--text-dark);">(505) 560-3865</a></p>
+                </div>
+                <div class="contact-item">
+                    <h4>Email Us</h4>
+                    <p><a href="mailto:info@505plumbing.com" style="color: var(--text-dark);">info@505plumbing.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h4>Location</h4>
+                    <p>Albuquerque, NM<br>United States</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="tel:+15055603865" class="btn">Schedule Service Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 style="color: var(--accent-color); font-weight: 800; font-size: 1.5rem;">505 Plumbing</h3>
+                    <p>Your trusted local experts for Plumbing, Heating & Cooling Services in Albuquerque, NM. Fast, reliable, and affordable.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p>Phone: <a href="tel:+15055603865">(505) 560-3865</a></p>
+                    <p>Email: <a href="mailto:info@505plumbing.com">info@505plumbing.com</a></p>
+                    <p>Location: Albuquerque, NM, USA</p>
+                    <p>Website: <a href="https://505plumbing.com/">505plumbing.com</a></p>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://maps.app.goo.gl/bVLYXJqVnuhru97z6" target="_blank" rel="noopener noreferrer">Google Business</a> | 
+                        <a href="https://www.instagram.com/505plumbheatcool" target="_blank" rel="noopener noreferrer">Instagram</a> | 
+                        <a href="https://www.facebook.com/505plumbingheatcool/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 505 Plumbing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
