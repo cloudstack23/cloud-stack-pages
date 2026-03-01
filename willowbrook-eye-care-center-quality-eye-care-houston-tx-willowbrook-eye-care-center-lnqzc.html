@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willowbrook Eye Care Center | Quality Eye Care Houston, TX</title>
+    <meta name="description" content="Quality Eye Care is the premier Willowbrook eye care center in Houston, TX. We specialize in comprehensive eye exams, contact lenses, and pediatric vision care.">
+    <meta name="keywords" content="Willowbrook eye care center, optometrist Houston TX, eye exams, contact lens fittings, pediatric vision care">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Willowbrook Eye Care Center | Quality Eye Care Houston, TX">
+    <meta property="og:description" content="Quality Eye Care is the premier Willowbrook eye care center in Houston, TX. We specialize in comprehensive eye exams, contact lenses, and pediatric vision care.">
+    <meta property="og:url" content="https://www.eyecaresuperior.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Willowbrook Eye Care Center | Quality Eye Care Houston, TX">
+    <meta name="twitter:description" content="Quality Eye Care is the premier Willowbrook eye care center in Houston, TX. We specialize in comprehensive eye exams, contact lenses, and pediatric vision care.">
+
+    <!-- Schema.org LocalBusiness JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Optician",
+      "name": "Quality Eye Care",
+      "url": "https://www.eyecaresuperior.com",
+      "telephone": "(281) 477-7811",
+      "description": "Quality Eye Care is the premier eye care center in the Willowbrook area of Houston, TX. We specialize in comprehensive eye examinations, contact lens fittings, pediatric vision care, and the diagnosis and treatment of eye conditions.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "7540 Cypress Creek Pkwy",
+        "addressLocality": "Houston",
+        "addressRegion": "TX",
+        "postalCode": "77070",
+        "addressCountry": "US"
+      }
+    }
+    </script>
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-color: #0284c7; /* Professional Sky Blue */
+            --primary-hover: #0369a1;
+            --bg-light: #f8fafc;
+            --bg-white: #ffffff;
+            --text-dark: #0f172a;
+            --text-body: #334155;
+            --footer-bg: #1e293b;
+            --footer-text: #e5e7eb;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.05);
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-body);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--text-dark);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--primary-hover);
+            text-decoration: underline;
+        }
+
+        .seo-link {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-padding {
+            padding: 5rem 0;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--bg-white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+            color: var(--bg-white);
+            text-decoration: none;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Header & Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: var(--bg-white);
+            box-shadow: var(--shadow-sm);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--bg-white);
+            padding: 6rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--text-body);
+        }
+
+        /* About Section */
+        .about {
+            background-color: var(--bg-light);
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-img img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Services Section */
+        .services {
+            background-color: var(--bg-white);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: var(--bg-white);
+            padding: 2.5rem 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-color);
+        }
+
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .service-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background-color: var(--bg-light);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background-color: var(--bg-white);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        summary {
+            padding: 1.25rem;
+            font-weight: 600;
+            cursor: pointer;
+            color: var(--text-dark);
+            list-style: none;
+            position: relative;
+            background-color: var(--bg-white);
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            position: absolute;
+            right: 1.25rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        details[open] summary::after {
+            content: '-';
+        }
+
+        .faq-content {
+            padding: 0 1.25rem 1.25rem;
+            color: var(--text-body);
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--bg-white);
+            text-align: center;
+        }
+
+        .contact-info {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: var(--bg-light);
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-detail {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-detail strong {
+            color: var(--text-dark);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--footer-bg);
+            color: var(--footer-text);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h4 {
+            color: var(--bg-white);
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-col p, .footer-col a {
+            color: var(--footer-text);
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .footer-col a:hover {
+            color: var(--bg-white);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* Simplified for landing page, normally would be a hamburger menu */
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-padding {
+                padding: 3rem 0;
+            }
+        }
+    
+    /* Contrast safety net */
+    body { color: #1f2937; }
+    h1, h2, h3, h4, h5, h6 { color: #111827; }
+    p, li, span, div, a, td, th, label, summary { color: inherit; }
+    nav, nav * { color: #374151; }
+    nav a:hover { opacity: 0.8; }
+    footer, footer * { color: #e5e7eb; }
+    footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 { color: #ffffff; }
+    footer a { color: #ffffff; }
+    footer a:hover { opacity: 0.8; }
+    
+</style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="https://www.eyecaresuperior.com" class="logo">Quality <span>Eye Care</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Your Premier <a href="https://www.eyecaresuperior.com" class="seo-link">Willowbrook eye care center</a></h1>
+                <p>Experience expert vision care from our dedicated team of optometrists. We specialize in comprehensive eye examinations, contact lens fittings, and pediatric vision care in Houston, TX.</p>
+                <a href="#contact" class="btn">Schedule Your Appointment</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="container about-grid">
+                <div class="about-content">
+                    <h2>Welcome to Quality Eye Care</h2>
+                    <p>When you are looking for a trusted <strong>optometrist</strong>, you need a team that prioritizes your vision and overall eye health. As the leading <a href="https://www.eyecaresuperior.com" class="seo-link">Willowbrook eye care center</a>, Quality Eye Care is dedicated to providing personalized and comprehensive treatments for patients of all ages.</p>
+                    <p>From routine check-ups to the diagnosis and treatment of complex eye conditions, our state-of-the-art facility in Houston, TX is equipped to handle all your vision needs. We believe in taking the time to understand your lifestyle to recommend the perfect visual solutions.</p>
+                    <a href="#services" class="btn">Explore Our Services</a>
+                </div>
+                <div class="about-img">
+                    <!-- Image with graceful fallback -->
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173ff9e5944?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Optometrist examining a patient's eyes" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services section-padding">
+            <div class="container">
+                <h2 class="section-title">Comprehensive Vision Services</h2>
+                <div class="services-grid">
+                    
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                        <h3>Comprehensive Eye Exams</h3>
+                        <p>Thorough evaluations of your visual acuity and overall eye health. We utilize advanced technology to detect eye conditions early and ensure optimal vision.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 16A8 8 0 108 0a8 8 0 000 16zm.93-9.412l-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 110-2 1 1 0 010 2z" transform="translate(4 4)" />
+                        </svg>
+                        <h3>Contact Lens Fittings</h3>
+                        <p>Expert fittings for all types of contact lenses. Whether you need daily disposables, astigmatism correction, or multifocal lenses, we find the perfect fit.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                        <h3>Pediatric Vision Care</h3>
+                        <p>Specialized eye care tailored for children. We ensure your child's vision is developing correctly to support their learning and daily activities.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq section-padding">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    
+                    <details>
+                        <summary>What services do you provide at your <a href="https://www.eyecaresuperior.com" class="seo-link">Willowbrook eye care center</a>?</summary>
+                        <div class="faq-content">
+                            <p>We provide a full spectrum of vision care services including comprehensive eye examinations, custom contact lens fittings, pediatric vision care, and the diagnosis, management, and treatment of various eye conditions.</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Where is Quality Eye Care located?</summary>
+                        <div class="faq-content">
+                            <p>Our clinic is conveniently located at 7540 Cypress Creek Pkwy, Houston, TX, 77070, United States. We proudly serve the Willowbrook area and surrounding Houston communities.</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Do you diagnose and treat eye conditions?</summary>
+                        <div class="faq-content">
+                            <p>Yes, our dedicated team of optometrists is highly trained in the diagnosis and treatment of numerous eye conditions, including dry eye syndrome, glaucoma, macular degeneration, and diabetic retinopathy.</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>At what age should my child have their first eye exam?</summary>
+                        <div class="faq-content">
+                            <p>We recommend that children have their first comprehensive eye exam at 6 months of age, again at age 3, and right before starting kindergarten. Our pediatric vision care services are designed to be comfortable and engaging for children.</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>How can I schedule an appointment?</summary>
+                        <div class="faq-content">
+                            <p>Scheduling an appointment is easy! Simply call our office at (281) 477-7811 during our regular business hours, and our friendly staff will help you find a time that works best for your schedule.</p>
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <h2 class="section-title">Visit Quality Eye Care Today</h2>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p style="margin-bottom: 2rem;">Ready to experience the best <a href="https://www.eyecaresuperior.com" class="seo-link">Willowbrook eye care center</a>? Reach out to us today to schedule your comprehensive eye exam.</p>
+                    
+                    <div class="contact-detail">
+                        <strong>Address:</strong>
+                        7540 Cypress Creek Pkwy<br>
+                        Houston, TX, 77070<br>
+                        United States
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <strong>Phone:</strong>
+                        <a href="tel:2814777811">(281) 477-7811</a>
+                    </div>
+                    
+                    <div style="margin-top: 2rem;">
+                        <a href="tel:2814777811" class="btn">Call Now to Schedule</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Quality Eye Care</h4>
+                    <p>The premier eye care center in the Willowbrook area of Houston, TX. Dedicated to providing expert vision care for you and your family.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>7540 Cypress Creek Pkwy<br>Houston, TX, 77070<br>United States</p>
+                    <p>Phone: (281) 477-7811</p>
+                    <a href="https://www.eyecaresuperior.com">www.eyecaresuperior.com</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 Quality Eye Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
