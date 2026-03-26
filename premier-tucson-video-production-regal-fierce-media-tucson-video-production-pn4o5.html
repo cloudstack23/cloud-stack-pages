@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier Tucson Video Production | Regal Fierce Media</title>
+    <meta name="description" content="Regal Fierce Media is a premier video production company in Tucson, AZ. We specialize in high-quality commercial, corporate, and event videography to elevate your brand.">
+    <meta name="keywords" content="Tucson video production, video production company Tucson, commercial videography Arizona, corporate video Tucson, event videography">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Premier Tucson Video Production | Regal Fierce Media">
+    <meta property="og:description" content="Regal Fierce Media is a premier video production company in Tucson, AZ specializing in commercial, corporate, and event videography.">
+    <meta property="og:url" content="https://www.regalfiercemedia.com/video-production-tucson/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Premier Tucson Video Production | Regal Fierce Media">
+    <meta name="twitter:description" content="High-quality commercial, corporate, and event videography in Tucson, AZ to increase lead flow and elevate your brand.">
+
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Regal Fierce Media",
+      "description": "Regal Fierce Media is a premier video production company in Tucson, AZ. We specialize in high-quality commercial, corporate, and event videography across Arizona.",
+      "url": "https://www.regalfiercemedia.com/",
+      "telephone": "+1-520-565-2524",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "305 S Euclid Ave",
+        "addressLocality": "Tucson",
+        "addressRegion": "AZ",
+        "postalCode": "85719",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://maps.google.com/?cid=8991684579392922083"
+      ]
+    }
+    </script>
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary: #c2410c; /* Creative Rust/Orange-Red Accent */
+            --primary-hover: #9a3412;
+            --bg-light: #ffffff;
+            --bg-gray: #f3f4f6;
+            --text-dark: #111827;
+            --text-body: #4b5563;
+            --footer-bg: #1e293b;
+            --footer-text: #e5e7eb;
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-body);
+            background-color: var(--bg-light);
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--text-dark);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--primary-hover);
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: #ffffff;
+            padding: 0.875rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+            color: #ffffff;
+            text-decoration: none;
+            transform: translateY(-2px);
+        }
+
+        /* Header & Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        @media (min-width: 768px) {
+            .nav-links {
+                display: flex;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 5rem 0 6rem;
+            background: linear-gradient(135deg, var(--bg-gray) 0%, var(--bg-light) 100%);
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .hero-image {
+            margin-top: 3rem;
+            width: 100%;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        @media (min-width: 768px) {
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+            .hero p {
+                font-size: 1.25rem;
+            }
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 0;
+            background-color: var(--bg-light);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.25rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .service-card {
+            background: var(--bg-light);
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            transition: var(--transition);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary);
+        }
+
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 1.5rem;
+            color: var(--primary);
+        }
+
+        .service-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 5rem 0;
+            background-color: var(--bg-gray);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background: var(--bg-light);
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        summary {
+            padding: 1.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary);
+            transition: var(--transition);
+        }
+
+        details[open] summary::after {
+            content: '−';
+        }
+
+        .faq-content {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--text-body);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 5rem 0;
+            background-color: var(--bg-light);
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-item {
+            padding: 2rem;
+            background: var(--bg-gray);
+            border-radius: 8px;
+        }
+
+        .contact-item h3 {
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .contact-item p {
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--footer-bg);
+            color: var(--footer-text);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        @media (min-width: 768px) {
+            .footer-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .footer-col h4 {
+            color: #ffffff;
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-col p {
+            margin-bottom: 1rem;
+            color: var(--footer-text);
+        }
+
+        .footer-col a {
+            color: var(--primary);
+        }
+
+        .footer-col a:hover {
+            color: #ffffff;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
+    
+    /* Contrast safety net */
+    body { color: #1f2937; }
+    h1, h2, h3, h4, h5, h6 { color: #111827; }
+    p, li, span, div, a, td, th, label, summary { color: inherit; }
+    nav, nav * { color: #374151; }
+    nav a:hover { opacity: 0.8; }
+    footer, footer * { color: #e5e7eb; }
+    footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 { color: #ffffff; }
+    footer a { color: #ffffff; }
+    footer a:hover { opacity: 0.8; }
+    
+</style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Regal Fierce <span>Media</span></div>
+            <nav class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact" class="btn" style="padding: 0.5rem 1.25rem;">Get a Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Premier <strong>Tucson Video Production</strong> Services</h1>
+                <p>Regal Fierce Media is your trusted partner for high-quality commercial, corporate, and event videography across Arizona. Elevate your brand presence and increase lead flow with expert <a href="https://www.regalfiercemedia.com/video-production-tucson/">Tucson video production</a>.</p>
+                <a href="#contact" class="btn">Start Your Project Today</a>
+                
+                <img src="https://images.unsplash.com/photo-1601506521937-0121a7fc2a6b?auto=format&fit=crop&w=1200&q=80" alt="Professional video production camera setup" class="hero-image" onerror="this.style.display='none'">
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Videography Services</h2>
+                    <p>We provide comprehensive <a href="https://www.regalfiercemedia.com/video-production-tucson/">Tucson video production</a> solutions tailored to your business goals.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        </svg>
+                        <h3>Commercial Videography</h3>
+                        <p>Engaging, high-converting commercials designed to capture attention, communicate your value proposition, and drive immediate action from your target audience.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <h3>Corporate Video</h3>
+                        <p>Professional corporate videos including brand stories, training materials, and executive interviews that build trust and authority in your industry.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        <h3>Event Coverage</h3>
+                        <p>Dynamic event videography that perfectly captures the energy, key moments, and highlights of your corporate gatherings, conferences, and special events.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Common questions about working with Regal Fierce Media.</p>
+                </div>
+                
+                <div class="faq-container">
+                    <details>
+                        <summary>What types of videos do you produce?</summary>
+                        <div class="faq-content">
+                            We specialize in a wide range of video formats including commercial advertisements, corporate brand videos, event coverage, social media content, and promotional materials designed to elevate your brand presence.
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>How much does Tucson video production cost?</summary>
+                        <div class="faq-content">
+                            The cost of <a href="https://www.regalfiercemedia.com/video-production-tucson/">Tucson video production</a> varies depending on the scope of the project, including pre-production planning, shoot duration, crew size, and post-production editing requirements. Contact us for a custom quote tailored to your specific needs and budget.
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>How long does the video production process take?</summary>
+                        <div class="faq-content">
+                            A typical production timeline ranges from 2 to 6 weeks from our initial consultation to final delivery. This ensures ample time for strategic planning, professional filming, and meticulous editing to deliver the highest quality product.
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Do you help with video strategy to increase lead flow?</summary>
+                        <div class="faq-content">
+                            Absolutely. We don't just point and shoot. We work closely with you to understand your business goals and target audience, crafting a video strategy specifically designed to increase lead flow and maximize your return on investment.
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Are you available for shoots outside of Tucson?</summary>
+                        <div class="faq-content">
+                            Yes! While we are a premier Tucson-based company, we frequently travel across Arizona to provide top-tier videography services for our clients.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Ready to Elevate Your Brand?</h2>
+                    <p>Contact Regal Fierce Media today to discuss your next video project.</p>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Call Us Directly</h3>
+                        <p><a href="tel:5205652524" style="color: var(--text-dark);">(520) 565-2524</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Our Location</h3>
+                        <p>305 S Euclid Ave<br>Tucson, AZ, 85719<br>United States</p>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 3rem;">
+                    <a href="tel:5205652524" class="btn">Call (520) 565-2524 Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Regal Fierce Media</h4>
+                    <p>Your trusted partner for expert <a href="https://www.regalfiercemedia.com/video-production-tucson/">Tucson video production</a>. We help businesses increase lead flow and elevate their brand presence through high-quality commercial, corporate, and event videography.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Information</h4>
+                    <p><strong>Address:</strong><br>305 S Euclid Ave<br>Tucson, AZ, 85719<br>United States</p>
+                    <p><strong>Phone:</strong><br><a href="tel:5205652524">(520) 565-2524</a></p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="https://maps.google.com/?cid=8991684579392922083" target="_blank" rel="noopener noreferrer">Google Business Profile</a>
+                        <a href="https://www.regalfiercemedia.com/" target="_blank" rel="noopener noreferrer">Official Website</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2026 Regal Fierce Media. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
