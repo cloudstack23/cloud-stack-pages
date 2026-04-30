@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duramax Sheds | Premium Vinyl Sheds & Metal Garages</title>
+    <meta name="description" content="Duramax Sheds Online is your premier destination for high-quality Duramax building products. Shop durable vinyl sheds, metal garages, and glass garden rooms.">
+    <meta name="keywords" content="duramax sheds, vinyl sheds, metal garages, garden rooms, shed kits">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Duramax Sheds | Premium Vinyl Sheds & Metal Garages">
+    <meta property="og:description" content="Discover the perfect storage solution with our easy-to-assemble shed kits, designed to withstand the elements and maximize your outdoor space.">
+    <meta property="og:url" content="https://duramaxshedsonline.com/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Duramax Sheds | Premium Vinyl Sheds & Metal Garages">
+    <meta name="twitter:description" content="Shop high-quality Duramax building products including durable vinyl sheds and metal garages.">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Duramax Sheds Online",
+      "url": "https://duramaxshedsonline.com/",
+      "description": "Duramax Sheds Online is your premier destination for high-quality Duramax building products. We offer a wide selection of durable vinyl sheds, lean-to sheds, metal garages, and glass garden rooms.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      }
+    }
+    </script>
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-color: #15803d; /* Forest Green */
+            --primary-hover: #166534;
+            --bg-white: #ffffff;
+            --bg-light: #f3f4f6;
+            --text-dark: #1f2937;
+            --text-muted: #4b5563;
+            --footer-bg: #1e293b;
+            --footer-text: #e5e7eb;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--primary-hover);
+        }
+
+        h1, h2, h3, h4 {
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-muted);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--bg-white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+            color: var(--bg-white);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Header & Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: var(--bg-white);
+            box-shadow: var(--shadow-sm);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 4.5rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            letter-spacing: -0.025em;
+        }
+
+        .nav-links {
+            display: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Mobile Menu Toggle (CSS Only) */
+        .menu-toggle {
+            display: block;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        #menu-checkbox {
+            display: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--bg-light);
+            padding: 4rem 0 5rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Section Formatting */
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+        }
+
+        /* Services / Products Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--bg-white);
+            border-radius: 0.5rem;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            border: 1px solid #e5e7eb;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-color);
+        }
+
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .service-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        /* About / Content Section */
+        .about-content {
+            background-color: var(--bg-white);
+        }
+        
+        .about-text {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 0.5rem;
+            margin: 2rem auto 0;
+            display: block;
+            box-shadow: var(--shadow-md);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: var(--bg-light);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background-color: var(--bg-white);
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+
+        summary {
+            padding: 1.25rem;
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-dark);
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-content {
+            padding: 0 1.25rem 1.25rem;
+            color: var(--text-muted);
+        }
+
+        /* Contact / CTA Section */
+        .contact-cta {
+            background-color: var(--bg-white);
+            text-align: center;
+        }
+
+        .contact-box {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            background-color: var(--bg-light);
+            border-radius: 0.5rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .contact-box h2 {
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            margin: 2rem 0;
+            font-size: 1.125rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--footer-bg);
+            color: var(--footer-text);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h4 {
+            color: var(--bg-white);
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-col p, .footer-col a {
+            color: var(--footer-text);
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .footer-col a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+            font-size: 0.875rem;
+        }
+
+        /* Media Queries */
+        @media (min-width: 768px) {
+            .nav-links {
+                display: flex;
+            }
+            
+            .menu-toggle {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Mobile Menu Logic */
+        #menu-checkbox:checked ~ .nav-links {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 4.5rem;
+            left: 0;
+            right: 0;
+            background: var(--bg-white);
+            padding: 1rem 1.5rem 2rem;
+            box-shadow: var(--shadow-md);
+            gap: 1rem;
+        }
+    
+    /* Contrast safety net */
+    body { color: #1f2937; }
+    h1, h2, h3, h4, h5, h6 { color: #111827; }
+    p, li, span, div, a, td, th, label, summary { color: inherit; }
+    nav, nav * { color: #374151; }
+    nav a:hover { opacity: 0.8; }
+    footer, footer * { color: #e5e7eb; }
+    footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 { color: #ffffff; }
+    footer a { color: #ffffff; }
+    footer a:hover { opacity: 0.8; }
+    
+</style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="https://duramaxshedsonline.com/" class="logo">Duramax Sheds Online</a>
+            
+            <label for="menu-checkbox" class="menu-toggle">☰</label>
+            <input type="checkbox" id="menu-checkbox">
+            
+            <nav class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <h1>Premium <strong>Duramax Sheds</strong> for Ultimate Outdoor Storage</h1>
+                <p>Welcome to Duramax Sheds Online, your premier destination for high-quality building products. Discover our wide selection of durable vinyl sheds, lean-to sheds, metal garages, and elegant glass garden rooms designed to withstand the elements.</p>
+                <a href="https://duramaxshedsonline.com/" class="btn">Shop Duramax Sheds Today</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-content">
+            <div class="container">
+                <div class="about-text">
+                    <h2 class="section-title">Why Choose Duramax Building Products?</h2>
+                    <p>Finding the perfect storage solution has never been easier. At Duramax Sheds Online, we specialize in providing easy-to-assemble shed kits that maximize your outdoor space while offering unparalleled durability. Whether you need a small lean-to shed for garden tools or a massive metal garage for vehicle storage, our collection of <a href="https://duramaxshedsonline.com/">duramax sheds</a> is engineered for longevity.</p>
+                    <p>Our products are crafted from fire-retardant vinyl and galvanized steel, ensuring they will not rust, rot, dent, or mildew. Upgrade your backyard aesthetics and secure your belongings with the industry's leading storage solutions.</p>
+                    
+                    <!-- Fallback image requirement fulfilled here -->
+                    <img src="https://via.placeholder.com/800x400.png?text=Duramax+Sheds+Outdoor+Living" alt="Beautiful Duramax Sheds in a backyard setting" class="about-image" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </section>
+
+        <!-- Products/Services Section -->
+        <section id="products" class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Our Top Building Products</h2>
+                <div class="services-grid">
+                    
+                    <!-- Card 1: Vinyl Sheds -->
+                    <div class="service-card">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                        <h3>Durable Vinyl Sheds</h3>
+                        <p>Maintenance-free vinyl storage sheds that resist weather and wear. Perfect for housing garden tools, lawnmowers, and outdoor equipment securely.</p>
+                    </div>
+
+                    <!-- Card 2: Metal Garages -->
+                    <div class="service-card">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="8" width="18" height="12" rx="2"></rect>
+                            <path d="M2 8l10-5 10 5"></path>
+                            <path d="M8 12h8v8H8z"></path>
+                        </svg>
+                        <h3>Metal Garages</h3>
+                        <p>Heavy-duty metal structures providing maximum security and space for vehicles, boats, or large-scale workshop needs.</p>
+                    </div>
+
+                    <!-- Card 3: Garden Rooms -->
+                    <div class="service-card">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                            <path d="M3 9h18"></path>
+                            <path d="M9 21V9"></path>
+                        </svg>
+                        <h3>Glass Garden Rooms</h3>
+                        <p>Elegant, sun-filled glass garden rooms designed to extend your living space and let you enjoy the outdoors in comfort all year round.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="about-content">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    
+                    <details>
+                        <summary>Are <a href="https://duramaxshedsonline.com/">duramax sheds</a> easy to assemble?</summary>
+                        <div class="faq-content">
+                            Yes! All of our sheds come as comprehensive, easy-to-assemble kits. They include pre-cut, pre-drilled parts and detailed step-by-step instructions. Most models can be assembled by two people in just a few hours using basic household tools.
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>What materials are used in Duramax building products?</summary>
+                        <div class="faq-content">
+                            Duramax products are manufactured using high-quality, fire-retardant PVC vinyl and heavy-duty galvanized steel interior columns. This combination ensures maximum strength and weather resistance.
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Do these sheds require a foundation?</summary>
+                        <div class="faq-content">
+                            Yes, for optimal stability and longevity, we highly recommend installing your shed on a level foundation. A concrete pad, a wooden platform, or patio pavers work best to keep your shed secure and level.
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Are Duramax sheds weather-resistant?</summary>
+                        <div class="faq-content">
+                            Absolutely. They are engineered to withstand harsh weather conditions, including heavy snow loads and strong winds. The vinyl material will never rust, rot, dent, or fade, ensuring your shed looks great for years.
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Where can I buy replacement parts or accessories?</summary>
+                        <div class="faq-content">
+                            You can find a variety of accessories, including shelving kits, window inserts, and foundation kits directly on our website. We provide everything you need to customize your outdoor storage space.
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact / CTA Section -->
+        <section id="contact" class="contact-cta">
+            <div class="container">
+                <div class="contact-box">
+                    <h2>Ready to Upgrade Your Storage?</h2>
+                    <p>Transform your backyard with the industry's most reliable storage solutions. Based in the United States, we are dedicated to providing you with premium building products that last a lifetime.</p>
+                    
+                    <div class="contact-info">
+                        <strong>Location:</strong> United States<br>
+                        <em>Serving customers nationwide with fast, reliable shipping.</em>
+                    </div>
+
+                    <a href="https://duramaxshedsonline.com/" class="btn">Browse Our Catalog Online</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Duramax Sheds Online</h4>
+                    <p>Your premier destination for high-quality Duramax building products. Maximize your outdoor space with our durable, weather-resistant storage solutions.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="#hero">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#products">Products</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <p>Location: United States</p>
+                    <a href="https://duramaxshedsonline.com/">Visit Official Website</a>
+                    <br>
+                    <p><em>Follow us on social media:</em></p>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Duramax Sheds Online. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
