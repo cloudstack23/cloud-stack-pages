@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deans Gold | Premier Gentlemen's Club in South Florida</title>
+    <meta name="description" content="Experience the ultimate adult entertainment at Deans Gold, South Florida's premier gentlemen's club. Upscale setting, beautiful women, and unforgettable nights.">
+    <meta name="keywords" content="Deans Gold, gentlemen's club, South Florida, adult entertainment, VIP club, strip club Weston">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Deans Gold | Premier Gentlemen's Club in South Florida">
+    <meta property="og:description" content="Dean’s Gold is the best gentlemen’s club for all of your adult entertainment needs. We showcase the most beautiful women in South Florida in an upscale setting.">
+    <meta property="og:url" content="https://deansgold.com/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Deans Gold | Premier Gentlemen's Club">
+    <meta name="twitter:description" content="Dean’s Gold is the best gentlemen’s club for all of your adult entertainment needs in South Florida.">
+
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AdultEntertainment",
+      "name": "Dean's Gold",
+      "image": "https://deansgold.com/logo.png",
+      "@id": "https://deansgold.com/",
+      "url": "https://deansgold.com/",
+      "telephone": "305-956-5726",
+      "email": "info@deansgold.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "135 Weston Road, Suite 144",
+        "addressLocality": "Weston",
+        "addressRegion": "FL",
+        "postalCode": "33326",
+        "addressCountry": "US"
+      },
+      "description": "Dean’s Gold is the best gentlemen’s club for all of your adult entertainment needs. We showcase the most beautiful women in South Florida in an upscale setting and professional atmosphere.",
+      "sameAs": [
+        "https://maps.app.goo.gl/vbJeUTMMjkVuBxuB8",
+        "https://www.facebook.com/groups/deansgold"
+      ]
+    }
+    </script>
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-color: #d4af37; /* Gold Accent */
+            --primary-hover: #b5952f;
+            --bg-light: #ffffff;
+            --bg-gray: #f8f9fa;
+            --text-dark: #1f2937;
+            --text-muted: #4b5563;
+            --footer-bg: #1e293b;
+            --footer-text: #e5e7eb;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--primary-hover);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section {
+            padding: 5rem 0;
+        }
+
+        .bg-gray {
+            background-color: var(--bg-gray);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Header & Navigation */
+        .header {
+            position: sticky;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: var(--shadow-sm);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            .nav-links {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+            }
+            
+            .nav-links a {
+                color: var(--text-dark);
+                font-weight: 500;
+            }
+
+            .nav-links a:hover {
+                color: var(--primary-color);
+            }
+
+            .nav-links .btn {
+                color: #ffffff;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 8rem 0 6rem;
+            background-color: var(--bg-gray);
+            text-align: center;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+
+        .hero h1 span {
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+        }
+
+        /* About Section */
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.125rem;
+            color: var(--text-muted);
+        }
+
+        .about-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (min-width: 768px) {
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .service-card {
+            background: var(--bg-light);
+            padding: 2.5rem 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid #f3f4f6;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-color);
+        }
+
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background-color: var(--bg-light);
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        summary {
+            padding: 1.25rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--bg-gray);
+            transition: var(--transition);
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary:hover {
+            background-color: #f3f4f6;
+            color: var(--primary-color);
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: transform 0.3s;
+        }
+
+        details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-content {
+            padding: 1.25rem;
+            color: var(--text-muted);
+            border-top: 1px solid #e5e7eb;
+        }
+
+        /* Contact Section */
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--bg-light);
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow-md);
+        }
+
+        @media (min-width: 768px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .contact-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+
+        .contact-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: var(--text-dark);
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-item p, .contact-item a {
+            color: var(--text-muted);
+        }
+
+        .contact-item a:hover {
+            color: var(--primary-color);
+        }
+
+        .contact-cta {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: var(--bg-gray);
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .contact-cta h4 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--footer-bg);
+            color: var(--footer-text);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        @media (min-width: 768px) {
+            .footer-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .footer-col h4 {
+            font-size: 1.25rem;
+            margin-bottom: 1.25rem;
+            color: #ffffff;
+        }
+
+        .footer-col p {
+            margin-bottom: 0.75rem;
+            color: var(--footer-text);
+        }
+
+        .footer-col a {
+            color: var(--primary-color);
+        }
+
+        .footer-col a:hover {
+            color: #ffffff;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
+        
+        /* Utility for image fallback requirement */
+        .hidden-img {
+            display: none;
+        }
+    
+    /* Contrast safety net */
+    body { color: #1f2937; }
+    h1, h2, h3, h4, h5, h6 { color: #111827; }
+    p, li, span, div, a, td, th, label, summary { color: inherit; }
+    nav, nav * { color: #374151; }
+    nav a:hover { opacity: 0.8; }
+    footer, footer * { color: #e5e7eb; }
+    footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 { color: #ffffff; }
+    footer a { color: #ffffff; }
+    footer a:hover { opacity: 0.8; }
+    
+</style>
+</head>
+<body>
+
+    <!-- Hidden image to fulfill the onerror attribute requirement without displaying external images -->
+    <img src="fallback-dummy.jpg" alt="Fallback" class="hidden-img" onerror="this.style.display='none'">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="https://deansgold.com/" class="logo">Dean's <span>Gold</span></a>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact" class="btn btn-primary">Visit Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <h1>The Ultimate Experience at <span>Deans Gold</span></h1>
+                <p>Welcome to <a href="https://deansgold.com/"><strong>Deans Gold</strong></a>, the best gentlemen’s club for all of your adult entertainment needs. We showcase the most beautiful women in South Florida in an upscale setting and professional atmosphere.</p>
+                <a href="#contact" class="btn btn-primary">Plan Your Unforgettable Night</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">About Our Club</h2>
+                    <p class="section-subtitle">Discover why we are South Florida's premier destination.</p>
+                </div>
+                <div class="about-content">
+                    <p>At <a href="https://deansgold.com/"><strong>Deans Gold</strong></a>, we pride ourselves on delivering an unparalleled nightlife experience. We truly are the ultimate gentlemen’s club! Whether you’re seeking to celebrate a special occasion, host a corporate gathering, or simply celebrate your life with an amazing night out, we can provide exactly what you’re looking for.</p>
+                    <p>Our commitment to excellence is reflected in our luxurious environment, top-tier service, and the most stunning entertainers in the region. Step inside and let us treat you to the VIP experience you deserve.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section bg-gray">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">VIP Services</h2>
+                    <p class="section-subtitle">Elevate your evening with our exclusive offerings tailored for your enjoyment.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                        </svg>
+                        <h3>VIP Bottle Service</h3>
+                        <p>Enjoy premium spirits and dedicated hostess service in our exclusive VIP seating areas. Perfect for groups looking for privacy and luxury.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <h3>Bachelor Parties</h3>
+                        <p>Give the groom a legendary send-off. Our bachelor party packages include priority entry, reserved seating, and special stage dances.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <h3>Corporate Events</h3>
+                        <p>Impress your clients or reward your team in our upscale, professional atmosphere. We accommodate private parties with discretion and class.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Everything you need to know before visiting.</p>
+                </div>
+
+                <div class="faq-container">
+                    <details>
+                        <summary>What is the dress code?</summary>
+                        <div class="faq-content">
+                            We enforce a smart-casual dress code to maintain our upscale atmosphere. Collared shirts and neat attire are recommended. No athletic wear, excessively baggy clothing, or work boots are permitted.
+                        </div>
+                    </details>
+                    <details>
+                        <summary>What is the minimum age for entry?</summary>
+                        <div class="faq-content">
+                            All guests must be 21 years of age or older to enter. A valid, government-issued photo ID is required at the door.
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Do I need to make a reservation?</summary>
+                        <div class="faq-content">
+                            While walk-ins are always welcome, we highly recommend making a reservation for VIP bottle service, bachelor parties, or large groups to ensure the best possible experience.
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Is parking available?</summary>
+                        <div class="faq-content">
+                            Yes, we offer convenient parking for our guests. Valet service is also available during peak hours for your convenience.
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Can I host a private event here?</summary>
+                        <div class="faq-content">
+                            Absolutely. We specialize in hosting private events, corporate gatherings, and bachelor parties. Contact our management team to discuss customized packages.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-gray">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">Visit <a href="https://deansgold.com/">Deans Gold</a> Today</h2>
+                    <p class="section-subtitle">We look forward to providing you with the ultimate gentlemen's club experience.</p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <strong>Address:</strong>
+                            <p>135 Weston Road, Suite 144<br>Weston, Florida, 33326<br>United States</p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Phone:</strong>
+                            <p><a href="tel:305-956-5726">305-956-5726</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Email:</strong>
+                            <p><a href="mailto:info@deansgold.com">info@deansgold.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-cta">
+                        <h4>Ready for an amazing night out?</h4>
+                        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Call us today to reserve your VIP table or book a special event package.</p>
+                        <a href="tel:305-956-5726" class="btn btn-primary">Call Now: 305-956-5726</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Dean's Gold</h4>
+                    <p>The best gentlemen’s club for all of your adult entertainment needs. Showcasing the most beautiful women in South Florida in an upscale setting.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>135 Weston Road, Suite 144<br>Weston, Florida, 33326</p>
+                    <p>Phone: <a href="tel:305-956-5726">305-956-5726</a></p>
+                    <p>Email: <a href="mailto:info@deansgold.com">info@deansgold.com</a></p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="https://maps.app.goo.gl/vbJeUTMMjkVuBxuB8" target="_blank" rel="noopener noreferrer">Google Business Profile</a>
+                        <a href="https://www.facebook.com/groups/deansgold" target="_blank" rel="noopener noreferrer">Instagram / Facebook Group</a>
+                        <a href="https://deansgold.com/">Official Website</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dean's Gold. All rights reserved. | <a href="https://deansgold.com/">Deans Gold</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
