@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pest Control North Atlanta | Monitor Pest Control</title>
+    <meta name="description" content="Monitor Pest Control provides top-tier residential and commercial pest control services across the greater North Atlanta, GA area. Safe and effective removal of ants, termites, rodents, and more.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Pest Control North Atlanta | Monitor Pest Control">
+    <meta property="og:description" content="Top-tier residential and commercial pest control services across the greater North Atlanta, GA area. Expert removal of ants, termites, roaches, rodents, and wildlife.">
+    <meta property="og:url" content="https://monitorpest.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://monitorpest.com/wp-content/uploads/2025/05/Monitor-Pest-Control-Logo-transparent-bg.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pest Control North Atlanta | Monitor Pest Control">
+    <meta name="twitter:description" content="Top-tier residential and commercial pest control services across the greater North Atlanta, GA area.">
+    <meta name="twitter:image" content="https://monitorpest.com/wp-content/uploads/2025/05/Monitor-Pest-Control-Logo-transparent-bg.png">
+
+    <!-- Schema.org LocalBusiness JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PestControl",
+      "name": "Monitor Pest Control",
+      "url": "https://monitorpest.com/",
+      "telephone": "01474 358855",
+      "image": "https://monitorpest.com/wp-content/uploads/2025/05/Monitor-Pest-Control-Logo-transparent-bg.png",
+      "description": "Monitor Pest Control provides top-tier residential and commercial pest control services across the greater North Atlanta, GA area.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Atlanta",
+        "addressRegion": "GA",
+        "addressCountry": "US"
+      },
+      "areaServed": ["Cobb County", "Fulton County", "DeKalb County", "North Atlanta"]
+    }
+    </script>
+
+    <style>
+        /* CSS Variables & Reset */
+        :root {
+            --primary-color: #16a34a; /* Accent Green */
+            --primary-hover: #15803d;
+            --text-dark: #0f172a;
+            --text-light: #475569;
+            --bg-light: #f8fafc;
+            --bg-white: #ffffff;
+            --footer-bg: #1e293b;
+            --footer-text: #e5e7eb;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+
+        body {
+            background-color: var(--bg-light);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .seo-link {
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: underline;
+            text-decoration-color: transparent;
+            transition: text-decoration-color 0.3s ease;
+        }
+
+        .seo-link:hover {
+            text-decoration-color: var(--primary-color);
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 2rem; color: var(--text-dark); text-align: center; margin-bottom: 2rem; }
+        h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+        p { margin-bottom: 1rem; color: var(--text-light); }
+
+        /* Container */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--bg-white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            color: var(--bg-white);
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--bg-white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo-container img {
+            height: 50px;
+            max-height: 60px;
+            max-width: 200px;
+            width: auto;
+            display: block;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--text-dark);
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--bg-white);
+            padding: 5rem 0;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background-color: var(--bg-white);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .service-icon {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+
+        /* About / Content Section */
+        .about-section {
+            background-color: var(--bg-white);
+            padding: 4rem 0;
+        }
+        
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 5rem 0;
+            background-color: var(--bg-light);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background-color: var(--bg-white);
+            margin-bottom: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+
+        summary {
+            padding: 1.25rem;
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            color: var(--text-dark);
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            position: absolute;
+            right: 1.25rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        details[open] summary::after {
+            content: '-';
+        }
+
+        details p {
+            padding: 0 1.25rem 1.25rem;
+            margin: 0;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--bg-white);
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            font-size: 1.125rem;
+        }
+
+        .contact-phone {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--footer-bg);
+            color: var(--footer-text);
+            padding: 3rem 0 1.5rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-col h3 {
+            color: var(--bg-white);
+            margin-bottom: 1rem;
+        }
+
+        .footer-col p, .footer-col a {
+            color: var(--footer-text);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .footer-col a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.875rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+                width: 100%;
+            }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.75rem; }
+            .hero { padding: 3rem 0; }
+        }
+    
+    /* Contrast safety net */
+    body { color: #1f2937; }
+    h1, h2, h3, h4, h5, h6 { color: #111827; }
+    p, li, span, div, a, td, th, label, summary { color: inherit; }
+    nav, nav * { color: #374151; }
+    nav a:hover { opacity: 0.8; }
+    footer, footer * { color: #e5e7eb; }
+    footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 { color: #ffffff; }
+    footer a { color: #ffffff; }
+    footer a:hover { opacity: 0.8; }
+    
+</style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo-container">
+                <a href="https://monitorpest.com/">
+                    <img src="https://monitorpest.com/wp-content/uploads/2025/05/Monitor-Pest-Control-Logo-transparent-bg.png" alt="Monitor Pest Control" onerror="this.style.display='none'">
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#about">About Us</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact" class="btn">Call 01474 358855</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Expert Pest Control North Atlanta</h1>
+                <p>Protect your home and business with Monitor Pest Control. We are your trusted partner for comprehensive <a href="https://monitorpest.com/" class="seo-link">Pest Control North Atlanta</a>. Specializing in the safe and effective removal of ants, termites, roaches, rodents, wildlife, mosquitoes, and spiders.</p>
+                <a href="#contact" class="btn" style="font-size: 1.25rem; padding: 1rem 2rem;">Get a Free Quote Today</a>
+            </div>
+        </section>
+
+        <!-- About / SEO Content Section -->
+        <section id="about" class="about-section">
+            <div class="container about-content">
+                <h2>Serving Cobb, Fulton, DeKalb & Surrounding Counties</h2>
+                <p>When you need reliable <a href="https://monitorpest.com/" class="seo-link">Pest Control North Atlanta</a>, Monitor Pest Control delivers unmatched expertise and customer service. Whether you are dealing with a sudden infestation or looking for preventative treatments, our highly trained technicians utilize industry-leading techniques to keep your property safe, clean, and pest-free.</p>
+                <p>We understand that every property is unique. That is why we tailor our residential and commercial pest management strategies to target the specific environmental factors of the greater North Atlanta area.</p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Pest Control Services</h2>
+                <p style="text-align: center; max-width: 700px; margin: 0 auto;">Our comprehensive <a href="https://monitorpest.com/" class="seo-link">Pest Control North Atlanta</a> solutions are designed to tackle the toughest infestations while keeping your family, pets, and employees safe.</p>
+                
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="8" y="6" width="8" height="14" rx="4"/>
+                                <path d="m19 7-3 2"/><path d="m5 7 3 2"/>
+                                <path d="m19 14-3-2"/><path d="m5 14 3-2"/>
+                                <path d="m19 21-3-2"/><path d="m5 21 3-2"/>
+                                <path d="M12 6V2"/>
+                            </svg>
+                        </div>
+                        <h3>Ant, Roach & Termite Control</h3>
+                        <p>Protect your property's structural integrity and hygiene. We eliminate destructive termites, resilient roaches, and invasive ant colonies at their source.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 9a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v4a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V9z"/>
+                                <path d="M19 13a3 3 0 0 0 3-3"/><path d="M5 13a3 3 0 0 1-3-3"/>
+                                <circle cx="8" cy="9" r="1"/><circle cx="16" cy="9" r="1"/>
+                                <path d="M12 13v4"/><path d="M10 17h4"/>
+                            </svg>
+                        </div>
+                        <h3>Rodent & Wildlife Removal</h3>
+                        <p>Safe, humane, and effective trapping and exclusion services for mice, rats, squirrels, and other nuisance wildlife invading your home or business.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h3>Mosquito & Spider Treatments</h3>
+                        <p>Reclaim your outdoor and indoor spaces. Our targeted barrier treatments drastically reduce mosquito populations and eliminate dangerous spiders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container faq-container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <details>
+                    <summary>What areas do you serve in North Atlanta?</summary>
+                    <p>We proudly serve the greater North Atlanta area, providing expert pest control to residential and commercial properties in Cobb County, Fulton County, DeKalb County, and the surrounding communities.</p>
+                </details>
+
+                <details>
+                    <summary>Are your pest control treatments safe for pets and children?</summary>
+                    <p>Yes. The safety of your family and pets is our top priority. We use industry-approved, environmentally conscious products and application methods that are highly effective against pests but safe for your loved ones once dry.</p>
+                </details>
+
+                <details>
+                    <summary>How often should I schedule pest control services?</summary>
+                    <p>For optimal protection in the Georgia climate, we generally recommend quarterly pest control treatments. However, severe infestations or specific commercial requirements may necessitate monthly visits. We will customize a plan that fits your exact needs.</p>
+                </details>
+
+                <details>
+                    <summary>Do you offer commercial pest control?</summary>
+                    <p>Absolutely. We provide comprehensive commercial pest management for offices, restaurants, warehouses, and retail spaces to ensure your business remains compliant, clean, and welcoming to customers.</p>
+                </details>
+
+                <details>
+                    <summary>What types of pests do you handle?</summary>
+                    <p>Our team is fully equipped to handle a wide variety of pests including ants, termites, cockroaches, spiders, mosquitoes, rats, mice, and local wildlife. If it is bugging you, we can remove it.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- Contact / CTA Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Ready to Protect Your Property?</h2>
+                <p>Do not let pests take over your home or business. Contact Monitor Pest Control today for fast, reliable, and professional service.</p>
+                
+                <div class="contact-info">
+                    <div>
+                        <strong>Call Us Today:</strong><br>
+                        <a href="tel:01474358855" class="contact-phone">01474 358855</a>
+                    </div>
+                    <div>
+                        <strong>Location:</strong><br>
+                        Atlanta, GA, United States
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <a href="tel:01474358855" class="btn">Schedule Your Service</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Monitor Pest Control</h3>
+                    <p>Providing top-tier residential and commercial <a href="https://monitorpest.com/" style="text-decoration: underline;">Pest Control North Atlanta</a>. We are dedicated to keeping your environment safe, healthy, and pest-free.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <a href="#services">Our Services</a>
+                    <a href="#about">About Us</a>
+                    <a href="#faq">FAQs</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact & Connect</h3>
+                    <p><strong>Phone:</strong> <a href="tel:01474358855">01474 358855</a></p>
+                    <p><strong>Location:</strong> Atlanta, GA, United States</p>
+                    <p style="margin-top: 1rem;"><strong>Follow Us:</strong></p>
+                    <a href="https://maps.google.com/?cid=940502475148751994" target="_blank" rel="noopener noreferrer">Google Business Profile</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Monitor Pest Control. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
