@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top-Rated Auto Transport Services Nationwide | Freedom Auto Transport</title>
+    <meta name="description" content="Freedom Auto Transport provides reliable nationwide vehicle shipping services including open and enclosed transport, door-to-door delivery. Get a free estimate today.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Top-Rated Auto Transport Services Nationwide | Freedom Auto Transport">
+    <meta property="og:description" content="Reliable nationwide vehicle shipping services including open and enclosed transport, door-to-door delivery, and specialized shipping. Get a free estimate today.">
+    <meta property="og:url" content="https://freedomautotransport.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://freedomautotransport.com/wp-content/themes/freedom-auto-transport/assets/svg/logo.svg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Top-Rated Auto Transport Services Nationwide | Freedom Auto Transport">
+    <meta name="twitter:description" content="Reliable nationwide vehicle shipping services including open and enclosed transport, door-to-door delivery. Get a free estimate today.">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Freedom Auto Transport",
+      "url": "https://freedomautotransport.com/",
+      "logo": "https://freedomautotransport.com/wp-content/themes/freedom-auto-transport/assets/svg/logo.svg",
+      "description": "Freedom Auto Transport provides reliable nationwide vehicle shipping services including open and enclosed transport, door-to-door delivery, and specialized shipping for cars, motorcycles, boats, RVs, heavy equipment, and more.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      }
+    }
+    </script>
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-color: #1d4ed8; /* Strong Trustworthy Blue */
+            --primary-hover: #1e40af;
+            --text-dark: #1f2937;
+            --text-light: #4b5563;
+            --bg-white: #ffffff;
+            --bg-gray: #f3f4f6;
+            --bg-gray-light: #f9fafb;
+            --footer-bg: #1e293b;
+            --footer-text: #e5e7eb;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset & Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--bg-white);
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--primary-hover);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 2rem; text-align: center; margin-bottom: 2.5rem; }
+        h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+        p { margin-bottom: 1rem; color: var(--text-light); }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--bg-white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+            color: var(--bg-white);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-large {
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+        }
+
+        /* Header & Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: var(--bg-white);
+            box-shadow: var(--shadow-sm);
+            z-index: 1000;
+            padding: 10px 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-link {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            height: 45px;
+            max-width: 200px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        nav {
+            display: none; /* Hidden on mobile, shown on desktop */
+            align-items: center;
+            gap: 2rem;
+        }
+
+        nav a:not(.btn) {
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        nav a:not(.btn):hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--bg-gray-light);
+            padding: 4rem 0 5rem;
+            text-align: center;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Content Section */
+        .content-section {
+            padding: 4rem 0;
+        }
+
+        .content-section.bg-gray {
+            background-color: var(--bg-gray);
+        }
+
+        .intro-text {
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        /* Services Cards */
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--bg-white);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid #e5e7eb;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-color);
+        }
+
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 1.5rem;
+            color: var(--primary-color);
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background: var(--bg-white);
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        summary {
+            padding: 1.25rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-dark);
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        details[open] summary {
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .faq-content {
+            padding: 1.25rem;
+            color: var(--text-light);
+        }
+
+        .faq-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background-color: var(--primary-color);
+            color: var(--bg-white);
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .cta-section h2, .cta-section p {
+            color: var(--bg-white);
+        }
+
+        .cta-section .btn {
+            background-color: var(--bg-white);
+            color: var(--primary-color);
+        }
+
+        .cta-section .btn:hover {
+            background-color: var(--bg-gray-light);
+            box-shadow: 0 4px 14px 0 rgba(255, 255, 255, 0.39);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--footer-bg);
+            color: var(--footer-text);
+            padding: 3rem 0 1.5rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-info h3 {
+            color: var(--bg-white);
+            margin-bottom: 1rem;
+        }
+
+        .footer-info p {
+            color: var(--footer-text);
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: var(--footer-text);
+            margin: 0 10px;
+        }
+
+        .footer-links a:hover {
+            color: var(--bg-white);
+            text-decoration: underline;
+        }
+
+        .copyright {
+            border-top: 1px solid #334155;
+            padding-top: 1.5rem;
+            font-size: 0.875rem;
+            color: #94a3b8;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            h1 { font-size: 3rem; }
+            .logo { height: 55px; }
+            nav { display: flex; }
+            .hero { padding: 6rem 0 7rem; }
+            .services-grid { grid-template-columns: repeat(3, 1fr); }
+            .footer-content {
+                flex-direction: row;
+                justify-content: space-around;
+                text-align: left;
+            }
+        }
+    
+    /* Contrast safety net */
+    body { color: #1f2937; }
+    h1, h2, h3, h4, h5, h6 { color: #111827; }
+    p, li, span, div, a, td, th, label, summary { color: inherit; }
+    nav, nav * { color: #374151; }
+    nav a:hover { opacity: 0.8; }
+    footer, footer * { color: #e5e7eb; }
+    footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 { color: #ffffff; }
+    footer a { color: #ffffff; }
+    footer a:hover { opacity: 0.8; }
+    
+</style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="https://freedomautotransport.com/" class="logo-link">
+                <img src="https://freedomautotransport.com/wp-content/themes/freedom-auto-transport/assets/svg/logo.svg" 
+                     alt="Freedom Auto Transport" 
+                     onerror="this.style.display='none'" 
+                     class="logo">
+            </a>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#faq">FAQ</a>
+                <a href="https://freedomautotransport.com/" class="btn">Get a Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Reliable Nationwide Auto Transport Services</h1>
+                <p>Freedom Auto Transport provides secure, door-to-door vehicle shipping across the United States. Whether you are relocating, buying a car online, or shipping heavy equipment, we deliver peace of mind with every mile.</p>
+                <a href="https://freedomautotransport.com/" class="btn btn-large">Get Your Free Estimate Today</a>
+            </div>
+        </section>
+
+        <!-- About/Intro Section -->
+        <section id="about" class="content-section">
+            <div class="container">
+                <div class="intro-text">
+                    <p>As a leading provider of <a href="https://freedomautotransport.com/">auto transport services</a>, Freedom Auto Transport is committed to making vehicle shipping as seamless and stress-free as possible. We understand that your vehicle is a valuable asset, which is why we offer comprehensive shipping solutions tailored to your specific needs, timeline, and budget.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="content-section bg-gray">
+            <div class="container">
+                <h2>Our Vehicle Shipping Solutions</h2>
+                <p class="intro-text">Our comprehensive <a href="https://freedomautotransport.com/">auto transport services</a> are designed to accommodate any vehicle type, providing you with flexible and secure options.</p>
+                
+                <div class="services-grid">
+                    <!-- Service Card 1 -->
+                    <div class="service-card">
+                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                        </svg>
+                        <h3>Open Auto Transport</h3>
+                        <p>The most popular and cost-effective method for shipping standard vehicles. Your car is securely loaded onto an open trailer, providing efficient nationwide delivery.</p>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="service-card">
+                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                        <h3>Enclosed Transport</h3>
+                        <p>Maximum protection for luxury, classic, exotic, or highly valuable vehicles. Shipped in a fully enclosed trailer to shield against weather and road debris.</p>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="service-card">
+                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                        </svg>
+                        <h3>Specialized Shipping</h3>
+                        <p>We don't just ship cars. We offer specialized transport for motorcycles, boats, RVs, ATVs, and heavy construction equipment across the country.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="content-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <details>
+                        <summary>How much do <a href="https://freedomautotransport.com/" style="color: inherit; text-decoration: underline;">auto transport services</a> cost?</summary>
+                        <div class="faq-content">
+                            <p>The cost of vehicle shipping depends on several factors, including the distance, vehicle size and weight, the type of transport (open vs. enclosed), and current market conditions. For the most accurate pricing, we recommend requesting a free, no-obligation quote through our website.</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>How long does it take to ship a car?</summary>
+                        <div class="faq-content">
+                            <p>Transit times vary based on the distance. Generally, a coast-to-coast shipment takes about 7 to 10 days, while shorter regional transports may take 1 to 3 days. We provide estimated delivery windows when you book your transport.</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>What is the difference between open and enclosed transport?</summary>
+                        <div class="faq-content">
+                            <p><strong>Open transport</strong> is the industry standard where vehicles are shipped on an open-air trailer. It is safe and cost-effective. <strong>Enclosed transport</strong> places your vehicle inside a covered trailer, providing complete protection from weather, dust, and road debris, making it ideal for high-value or classic cars.</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Is my vehicle insured during transport?</summary>
+                        <div class="faq-content">
+                            <p>Yes. By law, all auto transport carriers must carry liability and cargo insurance. Your vehicle is covered from the moment it is loaded onto the truck until it is safely delivered to your destination.</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Do you offer door-to-door delivery?</summary>
+                        <div class="faq-content">
+                            <p>Yes, we specialize in door-to-door service. The driver will pick up and deliver your vehicle as close to your specified addresses as legally and safely possible, considering the size of the commercial transport truck.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Ship Your Vehicle?</h2>
+                <p style="margin-bottom: 2rem; font-size: 1.125rem;">Experience hassle-free shipping with Freedom Auto Transport. Request your quote today and let us handle the rest.</p>
+                <a href="https://freedomautotransport.com/" class="btn btn-large">Get Your Free Quote Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Freedom Auto Transport</h3>
+                    <p>Your trusted partner for <a href="https://freedomautotransport.com/" style="color: var(--bg-white); text-decoration: underline;">auto transport services</a> nationwide.</p>
+                    <p>Serving the entire United States.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Connect With Us</h3>
+                    <p>
+                        <a href="https://freedomautotransport.com/">Visit Website</a> | 
+                        <a href="#services">Our Services</a> | 
+                        <a href="#faq">Support</a>
+                    </p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Freedom Auto Transport. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
