@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Boxery | Premium Packaging Supplies & Shipping Materials</title>
+    <meta name="description" content="The Boxery is your nationwide e-commerce supplier for premium packaging supplies, corrugated boxes, and mailers. Same-day shipping available. Shop now!">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="The Boxery | Premium Packaging Supplies">
+    <meta property="og:description" content="Nationwide e-commerce supplier for corrugated boxes, mailers, and facility supplies. Order before 4pm EST for same-day shipping.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.theboxery.com/catalog.asp?d=1095&name=Clearance">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Boxery | Premium Packaging Supplies">
+    <meta name="twitter:description" content="Nationwide e-commerce supplier for corrugated boxes, mailers, and facility supplies. Order before 4pm EST for same-day shipping.">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "The Boxery",
+      "url": "https://www.theboxery.com/catalog.asp?d=1095&name=Clearance",
+      "description": "The Boxery is an e-commerce packaging supplier serving Lyndhurst, NJ and customers nationwide, stocking over 1,000 corrugated box sizes and facility supplies.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "availableLanguage": "English"
+      }
+    }
+    </script>
+
+    <style>
+        /* CSS Reset & Variables */
+        :root {
+            --primary-color: #0284c7; /* Trustworthy Sky Blue */
+            --primary-hover: #0369a1;
+            --bg-light: #ffffff;
+            --bg-gray: #f3f4f6;
+            --text-dark: #111827;
+            --text-muted: #4b5563;
+            --footer-bg: #1e293b;
+            --footer-text: #e5e7eb;
+            --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--primary-hover);
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        h1 { font-size: 2.5rem; font-weight: 800; }
+        h2 { font-size: 2rem; font-weight: 700; }
+        h3 { font-size: 1.25rem; font-weight: 600; }
+        p { margin-bottom: 1rem; color: var(--text-muted); }
+
+        /* Keyword Link Styling */
+        .seo-link {
+            font-weight: 600;
+            text-decoration: underline;
+            text-decoration-color: var(--primary-color);
+            text-underline-offset: 4px;
+        }
+
+        /* Layout */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-padding {
+            padding: 5rem 0;
+        }
+
+        .bg-gray {
+            background-color: var(--bg-gray);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-hover);
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        /* Header & Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 900;
+            color: var(--primary-color);
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 6rem 0;
+            background: linear-gradient(to bottom, #f0f9ff, #ffffff);
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: #ffffff;
+            padding: 2.5rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            color: var(--primary-color);
+            margin: 0 auto 1.5rem auto;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        summary {
+            padding: 1.25rem;
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-content {
+            padding: 0 1.25rem 1.25rem 1.25rem;
+            color: var(--text-muted);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            background-color: var(--primary-color);
+            color: #ffffff;
+        }
+
+        .cta-section h2, .cta-section p {
+            color: #ffffff;
+        }
+
+        .cta-section .btn {
+            background-color: #ffffff;
+            color: var(--primary-color);
+            margin-top: 1rem;
+        }
+
+        .cta-section .btn:hover {
+            background-color: var(--bg-gray);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--footer-bg);
+            color: var(--footer-text);
+            padding: 4rem 0 2rem 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h3 {
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-col p, .footer-col a {
+            color: var(--footer-text);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .footer-col a:hover {
+            color: #ffffff;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            font-size: 0.875rem;
+            color: #94a3b8;
+        }
+
+        /* Responsive Media Queries */
+        @media (min-width: 768px) {
+            h1 { font-size: 3.5rem; }
+            .nav-links { display: flex; }
+            .services-grid { grid-template-columns: repeat(3, 1fr); }
+            .footer-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+    
+    /* Contrast safety net */
+    body { color: #1f2937; }
+    h1, h2, h3, h4, h5, h6 { color: #111827; }
+    p, li, span, div, a, td, th, label, summary { color: inherit; }
+    nav, nav * { color: #374151; }
+    nav a:hover { opacity: 0.8; }
+    footer, footer * { color: #e5e7eb; }
+    footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 { color: #ffffff; }
+    footer a { color: #ffffff; }
+    footer a:hover { opacity: 0.8; }
+    
+</style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">The Boxery</div>
+            <nav class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#faq">FAQ</a>
+                <a href="https://www.theboxery.com/catalog.asp?d=1095&name=Clearance" class="btn">Shop Clearance</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Your Trusted Source for Premium Packaging Supplies</h1>
+                    <p>From corrugated boxes to poly mailers, The Boxery delivers top-quality <a href="https://www.theboxery.com/catalog.asp?d=1095&name=Clearance" class="seo-link">packaging supplies</a> nationwide. Serving Lyndhurst, NJ and beyond, we ensure your business never stops moving with same-day shipping on orders placed before 4pm EST.</p>
+                    <a href="https://www.theboxery.com/catalog.asp?d=1095&name=Clearance" class="btn">Shop Our Catalog Today</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section-padding bg-gray">
+            <div class="container">
+                <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <h2>Comprehensive Solutions for Your Business</h2>
+                    <p>We stock an extensive inventory of <a href="https://www.theboxery.com/catalog.asp?d=1095&name=Clearance" class="seo-link">packaging supplies</a> to meet all your shipping, moving, and facility maintenance needs.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Card 1 -->
+                    <div class="service-card">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                        <h3>Corrugated Boxes</h3>
+                        <p>With over 1,000 corrugated box sizes in stock, we have the perfect fit for any item. Durable, reliable, and ready to ship.</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="service-card">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <h3>Mailers & Shipping</h3>
+                        <p>Protect your products with our poly mailers, bubble mailers, tape, stretch wrap, and void fill. <strong>Plus, enjoy free shipping on all mailers!</strong></p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="service-card">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                            <path d="M9 14h6"></path>
+                            <path d="M9 10h6"></path>
+                        </svg>
+                        <h3>Facility Supplies</h3>
+                        <p>Beyond shipping, we carry a full line of janitorial and office supplies, including cleaning products, paper goods, and commercial ice melt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section-padding">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    
+                    <details>
+                        <summary>How fast will my order ship?</summary>
+                        <div class="faq-content">
+                            <p>We pride ourselves on speed. Any order placed before 4pm EST will ship the exact same day. We utilize multiple warehouses positioned strategically across the U.S. to ensure faster delivery times nationwide.</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Do you offer free shipping?</summary>
+                        <div class="faq-content">
+                            <p>Yes! We offer free shipping specifically on all of our mailer products, including poly mailers and bubble mailers, helping you keep your shipping costs down.</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>What types of packaging materials do you carry?</summary>
+                        <div class="faq-content">
+                            <p>We are a comprehensive supplier. Our inventory includes over 1,000 sizes of corrugated boxes, tape, stretch wrap, void fill, and a wide variety of other <a href="https://www.theboxery.com/catalog.asp?d=1095&name=Clearance" class="seo-link">packaging supplies</a> for both commercial shipping and moving needs.</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Do you sell products other than shipping boxes?</summary>
+                        <div class="faq-content">
+                            <p>Absolutely. In addition to shipping materials, our team carries a robust selection of janitorial and office supplies. This includes commercial cleaning products, paper goods, and ice melt for facility maintenance.</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Where is The Boxery located?</summary>
+                        <div class="faq-content">
+                            <p>While we proudly serve our local community in Lyndhurst, NJ, we are a nationwide e-commerce supplier. We ship to customers all across the United States from our network of distribution centers.</p>
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Fallback Demonstration (Hidden by default or acts as a structural element if loaded) -->
+        <div style="display:none;">
+            <img src="placeholder-image-for-validation.jpg" alt="Packaging Materials" onerror="this.style.display='none'">
+        </div>
+
+        <!-- CTA Section -->
+        <section class="section-padding cta-section">
+            <div class="container">
+                <h2>Ready to Upgrade Your Shipping Process?</h2>
+                <p style="max-width: 600px; margin: 0 auto 2rem auto;">Whether you need bulk corrugated boxes or reliable facility maintenance products, we have the <a href="https://www.theboxery.com/catalog.asp?d=1095&name=Clearance" style="color: #fff; text-decoration: underline; font-weight: bold;">packaging supplies</a> to keep your business running smoothly.</p>
+                <a href="https://www.theboxery.com/catalog.asp?d=1095&name=Clearance" class="btn">View Our Clearance Catalog</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="color: #ffffff; margin-bottom: 1rem;">The Boxery</div>
+                    <p>Your nationwide e-commerce packaging supplier. Proudly serving Lyndhurst, NJ and shipping coast-to-coast.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <a href="#services">Our Services</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="https://www.theboxery.com/catalog.asp?d=1095&name=Clearance">Shop Clearance</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <p>Follow us for updates on new products and shipping solutions.</p>
+                    <a href="https://www.theboxery.com/catalog.asp?d=1095&name=Clearance">Facebook</a>
+                    <a href="https://www.theboxery.com/catalog.asp?d=1095&name=Clearance">LinkedIn</a>
+                    <a href="https://www.theboxery.com/catalog.asp?d=1095&name=Clearance">Twitter</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 The Boxery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
