@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium CNC Plasma Tables | Cyrious Plasma Tables</title>
+    <meta name="description" content="Cyrious Plasma Tables specializes in high-quality CNC plasma cutting tables designed for precision, durability, and performance for fabricators and hobbyists.">
+    <meta name="keywords" content="CNC plasma tables, plasma cutting tables, metal fabrication, CNC cutting, Cyrious Plasma Tables">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Premium CNC Plasma Tables | Cyrious Plasma Tables">
+    <meta property="og:description" content="Discover high-quality CNC plasma cutting tables designed for precision, durability, and performance. Elevate your metalworking projects today.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cyriousplasmatables.com/">
+    <meta property="og:site_name" content="Cyrious Plasma Tables">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Premium CNC Plasma Tables | Cyrious Plasma Tables">
+    <meta name="twitter:description" content="Discover high-quality CNC plasma cutting tables designed for precision, durability, and performance. Elevate your metalworking projects today.">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Cyrious Plasma Tables",
+      "url": "https://cyriousplasmatables.com/",
+      "description": "Cyrious Plasma Tables specializes in high-quality CNC plasma cutting tables designed for precision, durability, and performance. Our tables empower metal fabricators and hobbyists to achieve clean, accurate cuts with ease.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      }
+    }
+    </script>
+
+    <style>
+        /* CSS Reset & Variables */
+        :root {
+            --primary: #0284c7; /* Industrial Plasma Blue */
+            --primary-dark: #0369a1;
+            --bg-light: #f8fafc;
+            --bg-white: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #475569;
+            --footer-bg: #1e293b;
+            --footer-text: #e5e7eb;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --radius: 0.5rem;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-white);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary);
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 2rem; text-align: center; margin-bottom: 2.5rem; }
+        h3 { font-size: 1.25rem; }
+        p { margin-bottom: 1rem; color: var(--text-muted); }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            border-radius: var(--radius);
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--bg-white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            color: var(--bg-white);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--bg-white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 5rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-main);
+            letter-spacing: -0.025em;
+        }
+        
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0;
+            background: linear-gradient(to bottom, var(--bg-light), var(--bg-white));
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .hero-content {
+            display: grid;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-text p {
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-image-container {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            background-color: #cbd5e1;
+            aspect-ratio: 16/9;
+        }
+
+        /* Services / Features Section */
+        .services {
+            padding: 5rem 0;
+            background-color: var(--bg-white);
+        }
+
+        .grid-3 {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: 1fr;
+        }
+
+        .card {
+            background: var(--bg-white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            border: 1px solid #f1f5f9;
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: #e2e8f0;
+        }
+
+        .card-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 1.5rem;
+            color: var(--primary);
+            background: #f0f9ff;
+            padding: 1rem;
+            border-radius: 50%;
+        }
+
+        /* Content Section */
+        .content-section {
+            padding: 5rem 0;
+            background-color: var(--bg-light);
+        }
+        
+        .content-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .content-wrapper p {
+            font-size: 1.1rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 5rem 0;
+            background-color: var(--bg-white);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background: var(--bg-white);
+            border: 1px solid #e2e8f0;
+            border-radius: var(--radius);
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        summary {
+            padding: 1.25rem;
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary);
+            transition: transform 0.3s ease;
+        }
+
+        details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        details p {
+            padding: 0 1.25rem 1.25rem;
+            margin: 0;
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 5rem 0;
+            background-color: var(--primary);
+            color: var(--bg-white);
+            text-align: center;
+        }
+
+        .cta h2 {
+            color: var(--bg-white);
+            margin-bottom: 1rem;
+        }
+
+        .cta p {
+            color: #e0f2fe;
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta .btn {
+            background-color: var(--bg-white);
+            color: var(--primary);
+        }
+
+        .cta .btn:hover {
+            background-color: #f8fafc;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--footer-bg);
+            color: var(--footer-text);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            gap: 3rem;
+            grid-template-columns: 1fr;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h4 {
+            color: var(--bg-white);
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-col p, .footer-col a {
+            color: #94a3b8;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .footer-col a:hover {
+            color: var(--bg-white);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+            font-size: 0.875rem;
+        }
+
+        /* Media Queries */
+        @media (min-width: 768px) {
+            h1 { font-size: 3.5rem; }
+            .nav-links { display: flex; }
+            .hero-content { grid-template-columns: 1fr 1fr; }
+            .hero { padding: 6rem 0; }
+            .grid-3 { grid-template-columns: repeat(3, 1fr); }
+            .footer-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+    
+    /* Contrast safety net */
+    body { color: #1f2937; }
+    h1, h2, h3, h4, h5, h6 { color: #111827; }
+    p, li, span, div, a, td, th, label, summary { color: inherit; }
+    nav, nav * { color: #374151; }
+    nav a:hover { opacity: 0.8; }
+    footer, footer * { color: #e5e7eb; }
+    footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 { color: #ffffff; }
+    footer a { color: #ffffff; }
+    footer a:hover { opacity: 0.8; }
+    
+</style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="https://cyriousplasmatables.com/" class="logo">Cyrious<span>Plasma</span></a>
+            <nav class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>High-Performance <a href="https://cyriousplasmatables.com/" style="color: inherit; text-decoration: underline; text-decoration-color: var(--primary);">CNC Plasma Tables</a></h1>
+                <p>Cyrious Plasma Tables specializes in high-quality cutting solutions designed for precision, durability, and unmatched performance. Empowering metal fabricators and hobbyists to achieve clean, accurate cuts with ease.</p>
+                <a href="#features" class="btn btn-primary">Explore Our Solutions</a>
+            </div>
+            <div class="hero-image-container">
+                <!-- Using a placeholder image related to metalworking/sparks with onerror fallback -->
+                <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="CNC Plasma Table Cutting Metal" onerror="this.style.display='none'" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Features Section -->
+    <section id="features" class="services">
+        <div class="container">
+            <h2>Engineered for Excellence</h2>
+            <div class="grid-3">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 3.75H6A2.25 2.25 0 003.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0120.25 6v1.5m0 9V18A2.25 2.25 0 0118 20.25h-1.5m-9 0H6A2.25 2.25 0 013.75 18v-1.5M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h3>Precision Cutting</h3>
+                    <p>Achieve immaculate, clean cuts on every project. Our tables are calibrated to deliver exact specifications, minimizing material waste and post-cut processing.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                        </svg>
+                    </div>
+                    <h3>Industrial Durability</h3>
+                    <p>Built with heavy-duty steel and premium components, our systems are designed to withstand the rigorous demands of daily metal fabrication.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                        </svg>
+                    </div>
+                    <h3>Intuitive Operation</h3>
+                    <p>Whether you are a seasoned professional or a passionate hobbyist, our user-friendly interfaces make setting up and executing complex cuts straightforward.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / SEO Content Section -->
+    <section id="about" class="content-section">
+        <div class="container content-wrapper">
+            <h2>Elevate Your Metalworking Projects</h2>
+            <p>At Cyrious Plasma Tables, we understand that the foundation of great metal fabrication lies in the tools you use. That is why we are dedicated to manufacturing top-tier <a href="https://cyriousplasmatables.com/">CNC plasma tables</a> that bridge the gap between industrial capability and user accessibility.</p>
+            <br>
+            <p>Our innovative solutions are engineered in the United States, focusing on rigid construction, advanced motion control, and reliable plasma integration. When you invest in our <a href="https://cyriousplasmatables.com/">CNC plasma tables</a>, you are investing in a machine that will consistently deliver high-quality results, allowing you to scale your production, tackle intricate designs, and bring your metalworking visions to life.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <details>
+                    <summary>What makes your CNC plasma tables different?</summary>
+                    <p>Our <a href="https://cyriousplasmatables.com/">CNC plasma tables</a> are built with a focus on uncompromised rigidity and precision. We use heavy-duty materials and state-of-the-art motion control systems to ensure that every cut is accurate, reducing the need for secondary finishing operations.</p>
+                </details>
+                <details>
+                    <summary>Are these tables suitable for hobbyists?</summary>
+                    <p>Absolutely. While our tables are built to industrial standards, we have designed the software and user interface to be intuitive and accessible. Hobbyists and small shop owners can easily learn to operate our machines and produce professional-grade work.</p>
+                </details>
+                <details>
+                    <summary>What types of metal can I cut?</summary>
+                    <p>Depending on the plasma cutter you pair with our tables, you can cut a wide variety of conductive metals, including mild steel, stainless steel, aluminum, copper, and brass. Thickness capabilities will vary based on your specific plasma power source.</p>
+                </details>
+                <details>
+                    <summary>Do you provide support and training?</summary>
+                    <p>Yes, we pride ourselves on exceptional customer service. We provide comprehensive resources, setup guides, and support to ensure you are up and running quickly and safely.</p>
+                </details>
+                <details>
+                    <summary>Where are your tables manufactured?</summary>
+                    <p>Cyrious Plasma Tables are proudly designed and manufactured in the United States, ensuring strict quality control and reliable craftsmanship in every unit we produce.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Fabrication Process?</h2>
+            <p>Discover how our innovative plasma cutting solutions can save you time, reduce waste, and increase your shop's capabilities.</p>
+            <a href="https://cyriousplasmatables.com/" class="btn">Visit Our Website to Learn More</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Cyrious Plasma Tables</h4>
+                    <p>High-quality CNC plasma cutting tables designed for precision, durability, and performance.</p>
+                    <p>Location: United States</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="#features">Features</a>
+                    <a href="#about">About Us</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="https://cyriousplasmatables.com/">Official Website</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <a href="https://cyriousplasmatables.com/">Facebook</a>
+                    <a href="https://cyriousplasmatables.com/">Instagram</a>
+                    <a href="https://cyriousplasmatables.com/">YouTube</a>
+                    <a href="https://cyriousplasmatables.com/">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Cyrious Plasma Tables. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
