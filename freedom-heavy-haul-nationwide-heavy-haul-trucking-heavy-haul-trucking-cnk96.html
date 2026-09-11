@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freedom Heavy Haul | Nationwide Heavy Haul Trucking</title>
+    <meta name="description" content="Freedom Heavy Haul is a leading heavy haul trucking company specializing in transporting oversize loads, heavy equipment, and specialized freight across the United States.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Freedom Heavy Haul | Nationwide Heavy Haul Trucking">
+    <meta property="og:description" content="Freedom Heavy Haul is a leading heavy haul trucking company specializing in transporting oversize loads, heavy equipment, and specialized freight across the United States.">
+    <meta property="og:url" content="https://freedomheavyhaul.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://freedomheavyhaul.com/wp-content/uploads/2026/03/logo-fhh.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Freedom Heavy Haul | Nationwide Heavy Haul Trucking">
+    <meta name="twitter:description" content="Expert logistics solutions for oversize loads and heavy equipment across the US.">
+    
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Freedom Heavy Haul",
+      "url": "https://freedomheavyhaul.com/",
+      "logo": "https://freedomheavyhaul.com/wp-content/uploads/2026/03/logo-fhh.png",
+      "description": "Freedom Heavy Haul is a leading heavy haul trucking company specializing in transporting oversize loads, heavy equipment, and specialized freight across the United States.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      }
+    }
+    </script>
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-color: #1f2937; /* Dark Gray */
+            --accent-color: #ea580c; /* Industrial Orange */
+            --accent-hover: #c2410c;
+            --bg-light: #ffffff;
+            --bg-gray: #f3f4f6;
+            --text-dark: #111827;
+            --text-body: #374151;
+            --footer-bg: #1e293b;
+            --footer-text: #e5e7eb;
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-body);
+            background-color: var(--bg-light);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--text-dark);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-padding {
+            padding: 5rem 0;
+        }
+
+        .bg-gray {
+            background-color: var(--bg-gray);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #ffffff;
+            padding: 0.875rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+            color: #ffffff;
+            text-decoration: none;
+            transform: translateY(-2px);
+        }
+
+        /* Header & Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: var(--bg-light);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo-img {
+            height: clamp(40px, 5vw, 60px);
+            max-width: 200px;
+            object-fit: contain;
+            display: block;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Mobile Menu Checkbox Hack */
+        .nav-toggle {
+            display: none;
+        }
+        
+        .nav-toggle-label {
+            display: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .nav-toggle-label span,
+        .nav-toggle-label span::before,
+        .nav-toggle-label span::after {
+            display: block;
+            background: var(--text-dark);
+            height: 3px;
+            width: 25px;
+            border-radius: 2px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .nav-toggle-label span::before,
+        .nav-toggle-label span::after {
+            content: '';
+            position: absolute;
+        }
+
+        .nav-toggle-label span::before { bottom: 8px; }
+        .nav-toggle-label span::after { top: 8px; }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(31, 41, 55, 0.95) 0%, rgba(17, 24, 39, 0.98) 100%);
+            color: #ffffff;
+            padding: 8rem 0 6rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: #ffffff;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 1.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            color: #d1d5db;
+        }
+
+        /* About Section */
+        .about-text {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.125rem;
+        }
+
+        /* Services Section */
+        .section-title {
+            text-align: center;
+            font-size: 2.25rem;
+            margin-bottom: 3rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--bg-light);
+            padding: 2.5rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            border-top: 4px solid var(--accent-color);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            fill: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background: var(--bg-light);
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            padding: 1rem 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        details[open] {
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        summary {
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: var(--text-dark);
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            padding-right: 2rem;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            transition: transform 0.3s ease;
+        }
+
+        details[open] summary::after {
+            content: '−';
+        }
+
+        .faq-answer {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e5e7eb;
+            color: var(--text-body);
+        }
+
+        /* CTA / Contact Section */
+        .cta-section {
+            text-align: center;
+            background-color: var(--bg-light);
+        }
+        
+        .contact-info {
+            margin: 2rem 0;
+            font-size: 1.125rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--footer-bg);
+            color: var(--footer-text);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h4 {
+            color: #ffffff;
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-col p {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-col a {
+            color: var(--footer-text);
+        }
+        
+        .footer-col a:hover {
+            color: var(--accent-color);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .nav-toggle-label {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                width: 100%;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background: var(--bg-light);
+                flex-direction: column;
+                padding: 1rem 0;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+
+            .nav-links a {
+                padding: 0.75rem 1.5rem;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-toggle:checked ~ .nav-links {
+                display: flex;
+            }
+            
+            .nav-toggle:checked ~ .nav-toggle-label span {
+                background: transparent;
+            }
+            
+            .nav-toggle:checked ~ .nav-toggle-label span::before {
+                transform: rotate(45deg);
+                bottom: 0;
+            }
+            
+            .nav-toggle:checked ~ .nav-toggle-label span::after {
+                transform: rotate(-45deg);
+                top: 0;
+            }
+
+            .section-padding {
+                padding: 3rem 0;
+            }
+            
+            .hero {
+                padding: 5rem 0 4rem;
+            }
+        }
+    
+    /* Contrast safety net */
+    body { color: #1f2937; }
+    h1, h2, h3, h4, h5, h6 { color: #111827; }
+    p, li, span, div, a, td, th, label, summary { color: inherit; }
+    nav, nav * { color: #374151; }
+    nav a:hover { opacity: 0.8; }
+    footer, footer * { color: #e5e7eb; }
+    footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 { color: #ffffff; }
+    footer a { color: #ffffff; }
+    footer a:hover { opacity: 0.8; }
+    
+</style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="https://freedomheavyhaul.com/" aria-label="Freedom Heavy Haul Home">
+                <img src="https://freedomheavyhaul.com/wp-content/uploads/2026/03/logo-fhh.png" 
+                     alt="Freedom Heavy Haul" 
+                     class="logo-img" 
+                     onerror="this.style.display='none'">
+            </a>
+            
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle Navigation">
+                <span></span>
+            </label>
+            
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact" class="btn" style="color: #fff;">Get a Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Nationwide <strong>Heavy Haul Trucking</strong> Services</h1>
+                <p>Freedom Heavy Haul specializes in transporting oversize loads, heavy equipment, and specialized freight safely and on time across the United States.</p>
+                <a href="#contact" class="btn">Request Your Freight Quote</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-padding">
+            <div class="container">
+                <div class="about-text">
+                    <h2>Your Trusted Logistics Partner</h2>
+                    <p>At Freedom Heavy Haul, we understand that moving massive equipment requires precision, expertise, and unwavering dedication. As a premier provider of <a href="https://freedomheavyhaul.com/">heavy haul trucking</a>, we deliver tailored logistics solutions designed specifically for the construction, mining, agriculture, and industrial sectors. With a steadfast commitment to <em>safety, reliability, and on-time delivery</em>, we ensure your most critical assets reach their destination securely.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section-padding bg-gray">
+            <div class="container">
+                <h2 class="section-title">Expert Freight & Logistics Services</h2>
+                <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">Our comprehensive <a href="https://freedomheavyhaul.com/">heavy haul trucking</a> capabilities allow us to handle the most complex transportation challenges across the nation.</p>
+                
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zm-14 9c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm12 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-8h2.5l1.96 2.5H17V9zM5 11V6h10v5H5z"/>
+                        </svg>
+                        <h3>Oversize Loads</h3>
+                        <p>We expertly manage the logistics, permitting, and routing required for wide, tall, and overweight loads, ensuring strict compliance with state and federal regulations.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.5 9.5L18 8H6L4.5 9.5V11H3v2h1.5v2.5h15V13H21v-2h-1.5V9.5zM15 14H9v-3h6v3zm2-4H7V8.5h10V10z"/>
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                        </svg>
+                        <h3>Heavy Equipment</h3>
+                        <p>From construction excavators to agricultural tractors and mining machinery, we have the specialized trailers and experienced drivers to transport your heavy equipment.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        <h3>Specialized Freight</h3>
+                        <p>Unique industrial components require unique solutions. We offer customized flatbed, step-deck, and multi-axle transport for specialized industrial freight.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    
+                    <details>
+                        <summary>What industries do you serve?</summary>
+                        <div class="faq-answer">
+                            <p>We provide tailored logistics and transportation solutions primarily for the construction, mining, agriculture, and industrial sectors. However, we are equipped to handle large-scale freight for virtually any industry requiring specialized transport.</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Where do you operate?</summary>
+                        <div class="faq-answer">
+                            <p>Freedom Heavy Haul operates nationwide. We have the capability, network, and expertise to transport your heavy equipment and oversize loads safely across the entire United States.</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>How much does <a href="https://freedomheavyhaul.com/">heavy haul trucking</a> cost?</summary>
+                        <div class="faq-answer">
+                            <p>Costs vary significantly based on the dimensions, weight, distance, required permits, and escort vehicle requirements of your specific load. We provide transparent, competitive pricing and encourage you to contact us directly for an accurate, custom quote.</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Do you handle permits and routing?</summary>
+                        <div class="faq-answer">
+                            <p>Yes, absolutely. Transporting oversize and overweight loads requires meticulous planning. Our logistics team handles all necessary state and local permits, route surveys, and pilot car arrangements to ensure a seamless delivery.</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Is my freight insured during transit?</summary>
+                        <div class="faq-answer">
+                            <p>Yes. Safety and security are our top priorities. Your freight is fully insured while in our care, providing you with complete peace of mind from pickup to final delivery.</p>
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA / Contact Section -->
+        <section id="contact" class="section-padding bg-gray cta-section">
+            <div class="container">
+                <h2>Get Your Freight Moving Today</h2>
+                <p style="max-width: 600px; margin: 0 auto;">Ready to experience the best in <a href="https://freedomheavyhaul.com/">heavy haul trucking</a>? Partner with Freedom Heavy Haul for reliable, safe, and on-time delivery of your most critical assets.</p>
+                
+                <div class="contact-info">
+                    <p><strong>Service Area:</strong> Nationwide across the United States</p>
+                    <p><strong>Website:</strong> <a href="https://freedomheavyhaul.com/">freedomheavyhaul.com</a></p>
+                </div>
+                
+                <a href="https://freedomheavyhaul.com/" class="btn">Contact Us Online</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="https://freedomheavyhaul.com/wp-content/uploads/2026/03/logo-fhh.png" 
+                         alt="Freedom Heavy Haul Logo" 
+                         style="max-width: 180px; margin-bottom: 1rem; filter: brightness(0) invert(1);" 
+                         onerror="this.style.display='none'">
+                    <p>A leading heavy haul trucking company specializing in transporting oversize loads, heavy equipment, and specialized freight across the United States.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#about">About Us</a></p>
+                    <p><a href="#services">Services</a></p>
+                    <p><a href="#faq">FAQ</a></p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Information</h4>
+                    <p><strong>Location:</strong> United States</p>
+                    <p><strong>Website:</strong> <a href="https://freedomheavyhaul.com/">freedomheavyhaul.com</a></p>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Freedom Heavy Haul. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
