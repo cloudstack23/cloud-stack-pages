@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wenesco | Premium Industrial Heating Equipment</title>
+    <meta name="description" content="Wenesco is a leading American manufacturer of industrial heating equipment, including hot plates, wave soldering pots, and melters. Serving industries since 1964.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Wenesco | Premium Industrial Heating Equipment">
+    <meta property="og:description" content="American manufacturer of industrial heating and thermal processing equipment since 1964. High-quality solutions for defense, aviation, and electronics.">
+    <meta property="og:image" content="https://www.wenesco.com/wp-content/uploads/2026/04/030cd17824c76ec2d83b2592b5c3d813317ef621.png">
+    <meta property="og:url" content="https://www.wenesco.com/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wenesco | Premium Industrial Heating Equipment">
+    <meta name="twitter:description" content="American manufacturer of industrial heating and thermal processing equipment since 1964.">
+    <meta name="twitter:image" content="https://www.wenesco.com/wp-content/uploads/2026/04/030cd17824c76ec2d83b2592b5c3d813317ef621.png">
+
+    <!-- Schema.org LocalBusiness JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Wenesco",
+      "image": "https://www.wenesco.com/wp-content/uploads/2026/04/030cd17824c76ec2d83b2592b5c3d813317ef621.png",
+      "@id": "https://www.wenesco.com/",
+      "url": "https://www.wenesco.com/",
+      "description": "Wenesco is an American manufacturer of industrial heating and thermal processing equipment, including industrial hot plates, wave soldering pots, industrial melters, and high-temperature pumps.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Addison",
+        "addressRegion": "IL",
+        "addressCountry": "US"
+      },
+      "foundingDate": "1964"
+    }
+    </script>
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-color: #d32f2f; /* Industrial Heat Red */
+            --primary-hover: #b71c1c;
+            --text-dark: #1f2937;
+            --text-light: #4b5563;
+            --bg-white: #ffffff;
+            --bg-gray: #f3f4f6;
+            --footer-bg: #1e293b;
+            --footer-text: #e5e7eb;
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Keyword Link Styling */
+        a.keyword-link {
+            color: inherit;
+            text-decoration: underline;
+            text-decoration-color: var(--primary-color);
+            text-decoration-thickness: 2px;
+            text-underline-offset: 3px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        a.keyword-link:hover {
+            color: var(--primary-color);
+        }
+
+        /* Header & Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: var(--bg-white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo img {
+            height: 50px; /* Responsive height between 40-60px */
+            max-width: 200px;
+            object-fit: contain;
+            display: block;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            font-weight: 600;
+            color: var(--text-dark);
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
+            padding: 5rem 0;
+            text-align: center;
+            border-bottom: 1px solid #d1d5db;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            color: var(--text-light);
+            max-width: 800px;
+            margin: 0 auto 2.5rem auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--bg-white);
+            padding: 0.875rem 2rem;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(211, 47, 47, 0.3);
+        }
+
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        .about {
+            padding: 5rem 0;
+            background-color: var(--bg-white);
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 0;
+            background-color: var(--bg-gray);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: var(--bg-white);
+            padding: 2.5rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: var(--transition);
+            border-bottom: 4px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+            border-bottom-color: var(--primary-color);
+        }
+
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 1.5rem auto;
+            color: var(--primary-color);
+        }
+
+        .service-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 5rem 0;
+            background-color: var(--bg-white);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background-color: var(--bg-gray);
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        summary {
+            padding: 1.25rem;
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-dark);
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        details p {
+            padding: 0 1.25rem 1.25rem 1.25rem;
+            color: var(--text-light);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 5rem 0;
+            background-color: var(--bg-gray);
+            text-align: center;
+        }
+
+        .contact-info {
+            background-color: var(--bg-white);
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .contact-info h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+
+        .contact-info svg {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 8px;
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--footer-bg);
+            color: var(--footer-text);
+            padding: 3rem 0 1.5rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--footer-text);
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 1.5rem;
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
+
+        /* Media Queries */
+        @media (min-width: 768px) {
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .nav-wrapper {
+                flex-wrap: nowrap;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo img {
+                height: 40px;
+            }
+            .nav-wrapper {
+                justify-content: center;
+            }
+            .hero {
+                padding: 3rem 0;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    
+    /* Contrast safety net */
+    body { color: #1f2937; }
+    h1, h2, h3, h4, h5, h6 { color: #111827; }
+    p, li, span, div, a, td, th, label, summary { color: inherit; }
+    nav, nav * { color: #374151; }
+    nav a:hover { opacity: 0.8; }
+    footer, footer * { color: #e5e7eb; }
+    footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 { color: #ffffff; }
+    footer a { color: #ffffff; }
+    footer a:hover { opacity: 0.8; }
+    
+</style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container nav-wrapper">
+            <a href="https://www.wenesco.com/" class="logo">
+                <img src="https://www.wenesco.com/wp-content/uploads/2026/04/030cd17824c76ec2d83b2592b5c3d813317ef621.png" 
+                     alt="Wenesco" 
+                     onerror="this.style.display='none'">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Products</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Premium <a href="https://www.wenesco.com/" class="keyword-link">industrial heating equipment</a> for Critical Applications</h1>
+                <p>Since 1964, Wenesco has been the trusted American manufacturer of thermal processing solutions. We engineer reliable, high-quality equipment tailored for the electronics, defense, aviation, and chemical processing industries.</p>
+                <a href="https://www.wenesco.com/" class="btn">Discover Our Solutions</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">A Legacy of Thermal Excellence</h2>
+                <div class="about-content">
+                    <p>When operations require precision and durability, industry leaders turn to Wenesco. As a premier manufacturer of <a href="https://www.wenesco.com/" class="keyword-link">industrial heating equipment</a>, we specialize in building robust solutions that withstand the rigorous demands of modern manufacturing, laboratory research, and heavy industrial processing. From standard units to custom-engineered thermal systems, our commitment to quality has remained unwavering for over six decades.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services / Products Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Our Equipment Capabilities</h2>
+                <div class="services-grid">
+                    <!-- Card 1 -->
+                    <div class="service-card">
+                        <svg class="service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z"></path>
+                        </svg>
+                        <h3>Industrial Hot Plates</h3>
+                        <p>Heavy-duty, precision-controlled hot plates designed for uniform heat distribution. Ideal for laboratory environments, chemical processing, and specialized manufacturing tasks.</p>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="service-card">
+                        <svg class="service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                        </svg>
+                        <h3>Wave Soldering Pots</h3>
+                        <p>Engineered for the electronics and PCB assembly sectors, our soldering pots provide exceptional thermal stability, ensuring flawless solder joints and maximum production efficiency.</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="service-card">
+                        <svg class="service-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                        <h3>Melters & High-Temp Pumps</h3>
+                        <p>Robust industrial melters and high-temperature pumps built to handle demanding materials safely and effectively, supporting the automotive, mining, and pharmaceutical industries.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <details>
+                        <summary>What types of thermal processing solutions do you manufacture?</summary>
+                        <p>We manufacture a wide range of thermal solutions, including heavy-duty industrial hot plates, wave soldering pots, industrial melters, and high-temperature pumps. All our products are designed for durability and precision.</p>
+                    </details>
+                    <details>
+                        <summary>What industries use your <a href="https://www.wenesco.com/" class="keyword-link">industrial heating equipment</a>?</summary>
+                        <p>Our equipment is trusted across a diverse range of sectors, including electronics and PCB assembly, defense, aviation, laboratory research, chemical processing, automotive, pharmaceutical, and mining industries.</p>
+                    </details>
+                    <details>
+                        <summary>How long has Wenesco been in business?</summary>
+                        <p>Wenesco has been proudly manufacturing high-quality thermal processing equipment since 1964. With over 60 years of experience, we have established ourselves as a leader in the industry.</p>
+                    </details>
+                    <details>
+                        <summary>Do you provide equipment for high-temperature applications?</summary>
+                        <p>Yes, we specialize in high-temperature applications. Our industrial melters, hot plates, and specialized pumps are engineered specifically to operate safely and efficiently at extreme temperatures.</p>
+                    </details>
+                    <details>
+                        <summary>Where are your products manufactured?</summary>
+                        <p>Wenesco is a proud American manufacturer. All of our equipment is designed, engineered, and built to the highest quality standards in the United States.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact / CTA Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Ready to Upgrade Your Thermal Processing?</h2>
+                <div class="contact-info">
+                    <h3>Contact Wenesco Today</h3>
+                    <p>
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <strong>Headquarters:</strong> Addison, Illinois, United States
+                    </p>
+                    <p style="margin-bottom: 2rem;">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                        </svg>
+                        <strong>Website:</strong> <a href="https://www.wenesco.com/" style="color: var(--primary-color); text-decoration: underline;">www.wenesco.com</a>
+                    </p>
+                    <a href="https://www.wenesco.com/" class="btn">Visit Our Official Website</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>Wenesco — America's trusted provider of <a href="https://www.wenesco.com/" class="keyword-link" style="color: var(--bg-white); text-decoration-color: var(--bg-white);">industrial heating equipment</a> since 1964.</p>
+                <div class="footer-links">
+                    <a href="https://www.wenesco.com/">Home</a>
+                    <a href="https://www.wenesco.com/">Products</a>
+                    <a href="https://www.wenesco.com/">About Us</a>
+                    <a href="https://www.wenesco.com/">Contact</a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Wenesco. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
